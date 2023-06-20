@@ -1,6 +1,11 @@
+import tom from "../images/Home/lectures/tom.png"
+import emily from "../images/Home/lectures/emily.png"
+import vishant from "../images/Home/lectures/vishant.png"
+import shivani from "../images/Home/lectures/shivani.png"
+
 const Lectures = () => {
   return (
-    <div className="section section-3" style={{ background: '#1E2022' }}>
+    <div className="section" style={{ background: '#1E2022' }}>
       <div className="container">
         <div className="row align-items-center justify-content-between">
           <div className="col-lg-12 text-center mb-0" data-aos="fade-up">
@@ -18,11 +23,12 @@ const Lectures = () => {
           <div className="col-lg-12" data-aos="fade-up" data-aos-delay="200">
             <div className="destination-slider-wrap">
               <div className="destination-slider1">
+
                 <div className="destination">
                   <div className="mt-3">
                     <div className="media-entry media-entry-original">
                       <a href="#" target="_blank" style={{ background: 'none' }} className="text-center">
-                        <img src="images/Home/lectures/tom.png" alt="shivam shah" className="img-fluid" />
+                        <img src={tom} alt="Tom Campbell" className="img-fluid" />
                       </a>
                       <div className="bg-white m-body">
                         <h5 style={{ textAlign: 'center' }}>Tom Campbell</h5>
@@ -44,11 +50,12 @@ const Lectures = () => {
                     </div>
                   </div>
                 </div>
+
                 <div className="destination">
                   <div className="mt-4">
                     <div className="media-entry media-entry-original">
                       <a href="#" target="_blank" style={{ background: 'none' }} className="text-center">
-                        <img src="images/Home/lectures/emily.png" alt="shivam shah" className="img-fluid" />
+                        <img src={emily} alt="Emily Hanscom" className="img-fluid" />
                       </a>
                       <div className="bg-white m-body">
                         <h5 style={{ textAlign: 'center' }}>Emily Hanscom</h5>
@@ -69,11 +76,12 @@ const Lectures = () => {
                     </div>
                   </div>
                 </div>
+
                 <div className="destination">
                   <div className="mt-4">
                     <div className="media-entry media-entry-original">
                       <a href="#" target="_blank" style={{ background: 'none' }} className="text-center">
-                        <img src="images/Home/lectures/vishant.png" alt="shivam shah" className="img-fluid" />
+                        <img src={vishant} alt="Vishant Raajkumar" className="img-fluid" />
                       </a>
                       <div className="bg-white m-body">
                         <h5 style={{ textAlign: 'center' }}>Vishant Raajkumar</h5>
@@ -94,11 +102,12 @@ const Lectures = () => {
                     </div>
                   </div>
                 </div>
+
                 <div className="destination">
                   <div className="mt-4">
                     <div className="media-entry media-entry-original">
                       <a href="#" target="_blank" style={{ background: 'none' }} className="text-center">
-                        <img src="images/Home/lectures/shivani.png" alt="shivam shah" className="img-fluid" />
+                        <img src={shivani} alt="Shivanni Satish" className="img-fluid" />
                       </a>
                       <div className="bg-white m-body">
                         <h5 style={{ textAlign: 'center' }}>Shivanni Satish</h5>
@@ -120,6 +129,7 @@ const Lectures = () => {
                     </div>
                   </div>
                 </div>
+
               </div>
             </div>
           </div>
