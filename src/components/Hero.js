@@ -1,7 +1,6 @@
 import React from 'react';
 
-class Hero extends React.Component {
-    render() {
+function Hero() {
   return (
     <header style={{ paddingLeft: 0 }}>
       <div 
@@ -32,6 +31,5 @@ class Hero extends React.Component {
       {/*More will be added based on what is needed*/} 
     </header>
     
-        );
-    }
+  );
 }

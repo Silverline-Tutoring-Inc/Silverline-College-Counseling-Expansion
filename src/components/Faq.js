@@ -1,7 +1,6 @@
 import React from 'react';
 
-class FAQ extends React.Component {
-   render() {
+function FAQ() {
       return (
          <div>
             <div className="container">
@@ -70,7 +69,6 @@ class FAQ extends React.Component {
             </div>
          </div>
       );
-   }
 }
 
 export default FAQ;

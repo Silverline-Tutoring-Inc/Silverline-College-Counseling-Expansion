@@ -1,7 +1,6 @@
 import React from 'react';
 
-class About extends React.Component {
-   render() {
+function About() {
       return (
 <div>
     <div class="hero hero2" style={{backgroundImage:'url(about.png)',}}>
@@ -97,7 +96,6 @@ class About extends React.Component {
    </div>
 	
   );
-  }
 }
 
 export default About;

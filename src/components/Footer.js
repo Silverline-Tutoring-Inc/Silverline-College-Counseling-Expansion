@@ -36,6 +36,12 @@ const Footer = () => {
               <li>
                 <a href="/contact">Contact</a>
               </li>
+              <li>
+                <a href="/community">Community</a>
+              </li>
+              <li>
+                <a href="/faq">FAQ</a>
+              </li>
             </ul>
           </div>
           <div className="col-md-3">
