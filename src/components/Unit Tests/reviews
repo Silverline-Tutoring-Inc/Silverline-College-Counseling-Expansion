@@ -1,0 +1,66 @@
+import React from 'react';
+import './index.css';
+import ReactDOM from 'react-dom/client';
+import logo4 from "./images/logo4.svg";
+import logo1 from "./images/logo1.svg";
+import "./fonts/icomoon/style.css"
+import "./fonts/flaticon/font/flaticon.css"
+import "./css/tiny-slider.css"
+import "./css/aos.css"
+import "./css/flaticon.css"
+import "./css/flatpickr.min.css"
+import "./css/glightbox.min.css"
+import "./css/style.css"
+import "./css/fontawesome/webfonts/fa-brands-400.eot"
+import "./css/fontawesome/webfonts/fa-brands-400.woff"
+import "./css/fontawesome/webfonts/fa-brands-400.woff2"
+import "./css/fontawesome/webfonts/fa-regular-400.eot"
+import "./css/fontawesome/webfonts/fa-regular-400.woff"
+import "./css/fontawesome/webfonts/fa-solid-900.eot"
+import "./css/fontawesome/webfonts/fa-regular-400.woff2"
+import "./css/fontawesome/webfonts/fa-solid-900.woff2"
+import reportWebVitals from './reportWebVitals';
+class About extends React.Component {
+   render() {
+      return (
+   </div>
+   <div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-12">
+					<h1 data-aos="fade-up">Testimonials</h1>
+					<h2 class="heading mb-3" data-aos="fade-up" data-aos-delay="100"></h2>
+
+					<p data-aos="fade-up" data-aos-delay="200">I like how the tutors are very friendly and explain the topics 
+					in a very understanding way. They are quick to respond whenever I have a question. This organization 
+					is great if you want to improve in any subject or if you want to work on a hobby such as chess.</p>
+
+					<p data-aos="fade-up" data-aos-delay="300"> was struggling in math so I requested a tutor. I got so much 
+					help from my tutor and it was free to top it all off. This organization is great for anyone who is 
+					struggling in any subject and wants help from qualified tutors. The self-serving system also works as 
+					although I was previously a student, I'm now the head tutor.</p>
+
+					<p data-aos="fade-up" data-aos-delay="400">Silverline Tutoring is a great organization given the fact 
+					that it is free, has several tutors almost always active, and has a very active and friendly community. 
+					I really enjoy being tutored for free and it helps the tutors because they gain community service hours just 
+					for tutoring you. I would recommend that you join the organization </p>
+					
+					<p data-aos="fade-up" data-aos-delay="500">I was looking for help on computer science and requested a tutor 
+					at Silverline Tutoring. Within a couple of hours I was paired with a tutor and we met the next day over zoom. 
+					My tutor was able to break down the topic and made it really easy for me to understand. He helped me 
+					pass the class with an A+</p>
+
+					<p data-aos="fade-up" data-aos-delay="600">I was looking for quick help from the helpers in the organization, 
+					and I asked for help on a physics question I had and I got a response and help within minutes.</p>
+					
+					<p data-aos="fade-up" data-aos-delay="700">Silverline Tutoring is simply the best, I got so much help on my 
+					homework and the helpers quickly answered all the questions I had </p>
+				</div>
+				<div class="col-lg-1"></div>
+
+		  	</div>
+        </div>
+   </div>
+	
+  );
+  }
+}
