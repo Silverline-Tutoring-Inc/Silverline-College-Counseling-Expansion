@@ -68,7 +68,7 @@ const Review = () => {
   };
 
   return (
-    <div style={styles.reviewsPage}>
+    <div style={styles.reviewsPage} data-testid='reviews-container'>
       <h1 style={styles.reviewsTitle}>Reviews</h1>
       <p style={styles.reviewsSubtitle}>
         Hear what others have to say about Silverline Tutoring. 
