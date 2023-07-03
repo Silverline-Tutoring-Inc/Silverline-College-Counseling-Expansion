@@ -1,4 +1,4 @@
-export default function Services() {
+function Services() {
   return (
 
     <div className="Services">

@@ -1,3 +1,4 @@
+import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import "./css/style.css";
@@ -7,14 +8,12 @@ import Method from "./components/Method/Method";
 import Partners from "./components/Partners";
 import Lectures from "./components/Lectures";
 import Reviews from "./components/Reviews";
-import Services from "./components/Services.js";
 import Team from "./components/Team";
 import OurCommunity from "./components/OurCommunity/OurCommunity";
 import Testimonials from "./components/Testimonials";
 import Faq from "./components/Faq";
 import About from "./components/About";
-import Services from "./components/Services";
-
+import Services from "./components/Services.js";
 
 function App() {
   return (
