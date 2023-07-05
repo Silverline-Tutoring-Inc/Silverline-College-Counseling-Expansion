@@ -13,6 +13,7 @@ import OurCommunity from "./components/OurCommunity/OurCommunity";
 import Testimonials from "./components/Testimonials";
 import Faq from "./components/Faq";
 import About from "./components/About";
+import NavBar from "./components/NavBar";
 
 function App() {
 	return (
@@ -23,6 +24,7 @@ function App() {
 						path="/"
 						element={
 							<>
+								<NavBar pageName="home" />
 								<Reach />
 								<Lectures />
 								<Team />
