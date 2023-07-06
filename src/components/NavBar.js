@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../images/logo4.svg";
 
 import PropTypes from "prop-types";
 
@@ -46,8 +47,8 @@ const NavBar = ({ pageName }) => {
 					style={{ maxHeight: "70px", marginTop: "-15px" }}
 					alt="silverline tutoring logo"
 					class="float-start"
-					src="../images/logo4.svg"
-				/>
+					src={logo}				
+        />
 				<div class="site-navigation">
 					<ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-start">
 						<li class={elementName === "home" ? "active" : "non"}>

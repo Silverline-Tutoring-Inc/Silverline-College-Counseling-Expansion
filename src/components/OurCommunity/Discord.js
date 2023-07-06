@@ -7,15 +7,11 @@ const Discord = () => {
     display: "flex",
   };
 
-  const leftColumnStyle = {
-    flex: 1,
-  };
-
-  const rightColumnStyle = {
-    flex: 1,
+  const sectionStyle = {
     display: "flex",
-    justifyContent: "flex-end",
-    alignItems: "flex-start",
+		flexDirection: "row",
+		width: "75%",
+    margin: "auto"
   };
 
   const widgetStyle = {
@@ -39,7 +35,7 @@ const Discord = () => {
 
   return (
     <div style={containerStyle}>
-      <div style={leftColumnStyle}>
+      <div style={sectionStyle}>
         <div className="container">
           <h1 style={titleStyle}>Discord</h1>
           <p className="my-0" style={bodyStyle}>
@@ -68,8 +64,6 @@ const Discord = () => {
             levels.
           </p>
         </div>
-      </div>
-      <div style={rightColumnStyle}>
         <iframe
           src="https://discord.com/widget?id=795627064093966348&theme=dark"
           style={widgetStyle}
