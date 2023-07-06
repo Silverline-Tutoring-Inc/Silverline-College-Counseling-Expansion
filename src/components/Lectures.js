@@ -3,11 +3,11 @@ const Lectures = () => {
     <div className="section section-3" style={{ background: '#1E2022' }}>
       <div className="container">
         <div className="row align-items-center justify-content-between">
-          <div className="col-lg-12 text-center mb-0" data-aos="fade-up">
+          <div className="col-lg-12 text-center mb-0 animate__animated animate__fadeInUp">
             <span className="subheading">Lectures</span>
             <h2 className="heading mb-3">Our Past Lectures</h2>
           </div>
-          <div className="col-lg-12 text-md-end" data-aos="fade-up" data-aos-delay="100">
+          <div className="col-lg-12 text-md-end animate__animated animate__fadeInUp animate__delay-1s">
             <div id="destination-controls1">
               <span className="prev me-3" data-controls="prev"></span>
               <span className="next" data-controls="next"></span>
@@ -15,7 +15,7 @@ const Lectures = () => {
           </div>
         </div>
         <div className="row text-center">
-          <div className="col-lg-12" data-aos="fade-up" data-aos-delay="200">
+          <div className="col-lg-12 animate__animated animate__fadeInUp animate__delay-2s">
             <div className="destination-slider-wrap">
               <div className="destination-slider1">
 

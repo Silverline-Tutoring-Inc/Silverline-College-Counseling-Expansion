@@ -1,3 +1,4 @@
+import 'animate.css';
 import Footer from "./Footer"
 import partner1 from "../images/partners/thepond.png"
 import partner2 from "../images/partners/bumper.png"
@@ -23,7 +24,7 @@ const Partners = () => {
           </p>
           <div className="row align-items-stretch">
 
-            <div className="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div className="col-6 col-sm-6 col-md-6 col-lg-3 animate__animated animate__fadeInUp animate__delay-1s">
               <div className=" media-entry media-entry-copy media-size3">
                 <a href="https://diveintothepond.com/" target="_0" style={{ background: "none" }} className="text-center">
                   <img src={partner1} alt="panda express" className="img-fluid" />
@@ -37,7 +38,7 @@ const Partners = () => {
               </div>
             </div>
 
-            <div className="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div className="col-6 col-sm-6 col-md-6 col-lg-3 animate__animated animate__fadeInUp animate__delay-1s">
               <div className=" media-entry media-entry-copy media-size3">
                 <a href="https://www.joinbumper.com/ambassadors" target="0" style={{ background: "none" }} className="text-center">
                   <img src={partner2} alt="bumper investing" className="img-fluid" />
@@ -51,7 +52,7 @@ const Partners = () => {
               </div>
             </div>
 
-            <div className="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div className="col-6 col-sm-6 col-md-6 col-lg-3 animate__animated animate__fadeInUp animate__delay-1s">
               <div className=" media-entry media-entry-copy media-size3">
                 <a href="https://www.canva.com/" target="0" style={{ background: "none" }} className="text-center">
                   <img src={partner3} alt="bumper investing" className="img-fluid" />
@@ -65,7 +66,7 @@ const Partners = () => {
               </div>
             </div>
 
-            <div className="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div className="col-6 col-sm-6 col-md-6 col-lg-3 animate__animated animate__fadeInUp animate__delay-1s">
               <div className=" media-entry media-entry-copy media-size3">
                 <a href="https://rdcrss.org/silverlinetutoringinc" target="0" style={{ background: "none" }} className="text-center">
                   <img src={partner4} alt="bumper investing" className="img-fluid" />
@@ -79,7 +80,7 @@ const Partners = () => {
               </div>
             </div>
 
-            <div className="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div className="col-6 col-sm-6 col-md-6 col-lg-3 animate__animated animate__fadeInUp animate__delay-1s">
               <div className=" media-entry media-entry-copy media-size3">
                 <a href="https://365tojapan.com/" target="0" style={{ background: "none" }} className="text-center">
                   <img src={partner5} alt="bumper investing" className="img-fluid" />
@@ -93,7 +94,7 @@ const Partners = () => {
               </div>
             </div>
 
-            <div className="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div className="col-6 col-sm-6 col-md-6 col-lg-3 animate__animated animate__fadeInUp animate__delay-1s">
               <div className=" media-entry media-entry-copy media-size3">
                 <a href="https://www.linkedin.com/company/sultan-s-marketing/" target="0" style={{ background: "none" }} className="text-center">
                   <img src={partner6} alt="bumper investing" className="img-fluid" />
@@ -107,7 +108,7 @@ const Partners = () => {
               </div>
             </div>
 
-            <div className="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div className="col-6 col-sm-6 col-md-6 col-lg-3 animate__animated animate__fadeInUp animate__delay-1s">
               <div className=" media-entry media-entry-copy media-size3">
                 <a href=" https://www.community-fundraiser.com/virtual-fundraiser/events/promotions/104b6bfb-4dbd-b890-b2a1-4f237692f082/en/landing" target="0" style={{ background: "none" }} className="text-center">
                   <img src={partner7} alt="panda express" className="img-fluid" />
@@ -121,7 +122,7 @@ const Partners = () => {
               </div>
             </div>
 
-            <div className="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div className="col-6 col-sm-6 col-md-6 col-lg-3 animate__animated animate__fadeInUp animate__delay-1s">
               <div className=" media-entry media-entry-copy media-size3">
                 <a href=" https://www.equalityinforensics.org/" target="0" style={{ background: "none" }} className="text-center">
                   <img src={partner8} alt="panda express" className="img-fluid" />
@@ -135,7 +136,7 @@ const Partners = () => {
               </div>
             </div>
 
-            <div className="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div className="col-6 col-sm-6 col-md-6 col-lg-3 animate__animated animate__fadeInUp animate__delay-1s">
               <div className=" media-entry media-entry-copy media-size3">
                 <a href="https://www.chipotle.com/" target="_0" style={{ background: "none" }} className="text-center">
                   <img src={partner9} alt="panda express" className="img-fluid" />
@@ -149,7 +150,7 @@ const Partners = () => {
               </div>
             </div>
 
-            <div className="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div className="col-6 col-sm-6 col-md-6 col-lg-3 animate__animated animate__fadeInUp animate__delay-1s">
               <div className=" media-entry media-entry-copy media-size3">
                 <a href="https://www.thewishproject.org/" target="_0" style={{ background: "none" }} className="text-center">
                   <img src={partner10} alt="panda express" className="img-fluid" />
@@ -163,7 +164,7 @@ const Partners = () => {
               </div>
             </div>
 
-            <div className="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div className="col-6 col-sm-6 col-md-6 col-lg-3 animate__animated animate__fadeInUp animate__delay-1s">
               <div className=" media-entry media-entry-copy media-size3">
                 <a href="https://chs.chelmsfordschools.org/" target="_0" style={{ background: "none" }} className="text-center">
                   <img src={partner11} alt="panda express" className="img-fluid" />
