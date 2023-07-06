@@ -16,7 +16,7 @@ const statsList = [
 export default function Statistics() {
     return (
         <div style={{width: "100%", background: `url(${img}) no-repeat scroll center/cover`, padding: "150px 50px", display: "flex", flexDirection: "column", alignItems: "center", gap: 50}}>
-            <h1 style={{color: "white", fontWeight: 800, textAlign: "center", fontFamily: "'Work Sans', sans-serif"}}>Silverline Statistics</h1>
+            <h1 style={{color: "white", fontWeight: 800, textAlign: "center", fontFamily: "'Work Sans', sans-serif"}} data-aos="fade-up">Silverline Statistics</h1>
             <div style={{display: "grid", gridTemplateColumns: "auto auto auto auto", width: "60%", rowGap: 100, columnGap: 50}}>
                 {statsList.map(s => <StatItem {...s}/>)}
             </div>

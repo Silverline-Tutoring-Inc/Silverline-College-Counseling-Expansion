@@ -16,13 +16,14 @@ const OurReach = () => {
 	return (
 		<div style={{ backgroundColor: "#181A1B", padding: "7rem" }}>
 			<div className="container">
-				<h1 style={titleStyle}>Our Reach</h1>
-				<p style={bodyStyle}>
+				<h1 style={titleStyle} data-aos="fade-up">Our Reach</h1>
+        <h2 class="heading mb-3" data-aos="fade-up" data-aos-delay="100"></h2>
+				<p style={bodyStyle} data-aos="fade-up" data-aos-delay="200">
 					In our years of service, our organization has expanded into
 					numerous continents and continues to grow daily:
 				</p>
 
-				<div class="container text-white" style={{ display: "flex" }}>
+				<div class="container text-white" style={{ display: "flex" }} data-aos="fade-up" data-aos-delay="100">
 					<div
 						style={{
 							display: "flex",

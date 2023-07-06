@@ -14,8 +14,12 @@ import Testimonials from "./components/Testimonials";
 import Faq from "./components/Faq";
 import About from "./components/About";
 import NavBar from "./components/NavBar";
+import {useEffect} from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"
 
 function App() {
+  useEffect(() => {AOS.init()}, []);
 	return (
 		<div className="App">
 			<Router>

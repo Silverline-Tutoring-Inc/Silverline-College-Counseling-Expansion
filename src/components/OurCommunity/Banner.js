@@ -32,7 +32,7 @@ const Banner = () => {
         alt="banner"
         style={imageStyle}
       />
-      <h1 style={titleStyle}>Our Community</h1>
+      <h1 style={titleStyle} data-aos="fade-up" data-aos-delay="100">Our Community</h1>
     </div>
   );
 };

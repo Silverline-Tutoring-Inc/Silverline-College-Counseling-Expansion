@@ -14,8 +14,9 @@ const Opportunities = () => {
 	return (
 		<div style={{ backgroundColor: "#1E2022", padding: "7rem" }}>
 			<div className="container">
-				<h1 style={titleStyle}>Opportunities</h1>
-				<p className="my-0" style={bodyStyle}>
+				<h1 style={titleStyle} data-aos="fade-up">Opportunities</h1>
+        <h2 class="heading mb-3" data-aos="fade-up" data-aos-delay="100"></h2>        
+				<p className="my-0" style={bodyStyle} data-aos="fade-up" data-aos-delay="200">
 					As high schoolers, we acknowledge the difficulty in finding
 					opportunities such as internships or research positions. In
 					our community, we have an “Opportunities” hub that allows
