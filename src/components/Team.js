@@ -1,11 +1,14 @@
 import React from "react";
+import Rishi from "../images/team/rishi.jpg";
 
 function Team() {
   /*dummy data, paths for images must be made, not sure what images to choose and fill in respective positions*/
+  // You can used the images from image folder like I have done for line 10
+
   const board = [
     {
       name: "Rishi Ajmera",
-      img: "link_to_image",
+      img: Rishi,
       position: "",
       msg: "Rishi Ajmera is currently a high school senior from Eastern Massachusetts. Rishi’s initiative and concern about the barriers and inequality within education led him to found and run the organization. Rishi’s passion stemmed from his keen interests in math and his private tutoring sessions that he did within his local community. He taught students as young as pre- k all the way till 8th grade, ranging from basic addition and abstraction to SAT math problems. Seeing students excited to learn and excelling in their subject as a result, left Rishi satisfied and wanting to continue teaching. However, he realized how many students don’t get the opportunity of private tutoring often due to a multitude of factors like cost. This led to him to create Silverline Tutoring, a non profit organization that offers free tutoring to everyone regardless of background. As for the experience on the business side of the organization, Rishi has lots of experience within this field. He competes in DECA, an international business competition, and this year he competed in the event, entrepreneurship, qualifying all the way to the international stage. The previous year, Rishi competed in the event, principles of marketing, and qualified for states. Rishi is the president of his school's finance club as well which focuses on many aspects of personal finance such as stocks. Rishi's experience within business has allowed him to excel in the business side of operations of the organization",
     },
@@ -317,7 +320,8 @@ function Team() {
       name: "Noah Caywood",
       img: "link_to_image",
       position: "",
-      msg: "Noah Caywood is a sophomore at Santa Fe High School in Oklahoma, USA. His favorite subject to teach is chemistry but he also enjoys math, history, and art. His favorite hobbies include painting, reading, and cooking. He also really enjoys spending time with his hedgehog, Molly and his hamster, Bean. Noah joined Silverline Tutoring in hopes of creating a more accessible world for all students to learn in - especially neurodivergent students. Noah has great passions for teaching and hopes that all students can take away something valuable from him." },
+      msg: "Noah Caywood is a sophomore at Santa Fe High School in Oklahoma, USA. His favorite subject to teach is chemistry but he also enjoys math, history, and art. His favorite hobbies include painting, reading, and cooking. He also really enjoys spending time with his hedgehog, Molly and his hamster, Bean. Noah joined Silverline Tutoring in hopes of creating a more accessible world for all students to learn in - especially neurodivergent students. Noah has great passions for teaching and hopes that all students can take away something valuable from him."
+    },
   ];
 
   return (
