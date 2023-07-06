@@ -17,7 +17,7 @@ const UpcomingEvents = () => {
 			<div className="container">
 				<h1 style={titleStyle} data-aos="fade-up">Upcoming Events</h1>
         <br /><br />
-        <div data-tockify-component="mini" data-tockify-calendar="tarun.eswar" data-tockify-width="75%"></div>
+        <div data-tockify-component="mini" data-tockify-calendar="tarun.eswar" data-tockify-width="100%"></div>
 				<ScriptTag data-cfasync="false" data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js" />
 			</div>
 		</div>
