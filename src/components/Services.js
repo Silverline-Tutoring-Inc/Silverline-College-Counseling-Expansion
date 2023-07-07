@@ -1,8 +1,72 @@
 import React from 'react';
+import {Helmet} from 'react-helmet';
 
   const Services = () => {
   return (
     <div>
+      <Helmet>
+        <title>Services | Silverline Tutoring</title>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="description"
+          content="Find the numerous services Silverline Tutoring offers from tutoring to lectures!"
+        />
+        <meta
+          name="robots"
+          content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+        />
+        <meta httpEquiv="content-language" content="en-us" />
+
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+        />
+        <link
+          rel="preconnect"
+          href="https://fonts.googleapis.com"
+        />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin=""
+        />
+        <link
+          rel="preconnect"
+          href="https://fonts.googleapis.com"
+        />
+
+        <link
+          rel="preconnect"
+          href="https://fonts.googleapis.com"
+        />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin=""
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=DM+Sans:wght@500&family=Hammersmith+One&family=Open+Sans:wght@400;800&family=Poppins:wght@500&family=Raleway:wght@900&family=Roboto:wght@900&family=Work+Sans:wght@700&display=swap"
+          rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="fonts/icomoon/style.css" />
+        <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+
+        <link rel="stylesheet" href="css/tiny-slider.css" />
+        <link rel="stylesheet" href="css/flaticon.css" />
+        <link rel="stylesheet" href="css/aos.css" />
+        <link rel="stylesheet" href="css/flatpickr.min.css" />
+        <link rel="stylesheet" href="css/glightbox.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/fontawesome/css/all.min.css" />
+        <link rel="stylesheet" href="css/fontawesome/webfonts/." />
+        <link
+          rel="icon"
+          type="image/x-icon"
+          href="images/icon.svg"
+        />
+      </Helmet>
       <h1>Our Services</h1>
       <div>
         <img src="https://silverlinetutoring.org/wp-content/uploads/2022/01/tutoring-services.jpg" alt="Tutoring Services" />
