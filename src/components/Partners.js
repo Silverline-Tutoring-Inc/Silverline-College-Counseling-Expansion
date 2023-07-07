@@ -1,4 +1,3 @@
-import 'animate.css';
 import Footer from "./Footer"
 import partner1 from "../images/partners/thepond.png"
 import partner2 from "../images/partners/bumper.png"

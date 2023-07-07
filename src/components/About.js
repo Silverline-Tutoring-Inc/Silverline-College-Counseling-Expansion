@@ -1,8 +1,9 @@
 import React from 'react';
+import Footer from './Footer';
 
 function About() {
   return (
-    <div>
+    <>
       <div className="hero hero2" id='hero'>
         <div className="container">
           <div className="row align-items-center">
@@ -94,7 +95,9 @@ function About() {
         </div>
 
       </div>
-    </div>
+
+      <Footer />
+    </>
 
   );
 }
