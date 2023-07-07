@@ -14314,6 +14314,10 @@ textarea {
   color: #fff;
 }
 
+#hero {
+  background-image: url(../images/about/about1.png);
+}
+
 .section {
   padding-top: 7rem;
   background: #181A1B;
@@ -14550,6 +14554,10 @@ textarea {
 .bg-img>.container {
   position: relative;
   z-index: 1;
+}
+
+.overlay {
+  background-image: url('../images/about/sBG.png');
 }
 
 .wide-slider-testimonial-wrap {

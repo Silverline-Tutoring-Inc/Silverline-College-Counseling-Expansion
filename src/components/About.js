@@ -3,7 +3,7 @@ import React from 'react';
 function About() {
   return (
     <div>
-      <div className="hero hero2" >
+      <div className="hero hero2" id='hero'>
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-5 mx-auto text-center">
@@ -13,11 +13,12 @@ function About() {
         </div>
       </div>
 
-      <div>
+      <div className="section overlay" style={{ backgroundSize: "cover", backgroundRepeat: "repeat", backgroundPosition: "center center" }}>
+
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-12">
-              <h1 className='animate__animated animate__fadeInUp'>About Silverline</h1>
+              <h1 className='animate__animated animate__fadeInUp' style={{ color: "#918CA1", fontFamily: "Work Sans,sans-serif", fontWeight: "800" }}>About Silverline</h1>
               <h2 className="heading mb-3 animate__animated animate__fadeInUp animate__delay-1s"></h2>
 
               <p className='animate__animated animate__fadeInUp animate__delay-2s'>Silverline Tutoring is an educational 501(c)(3) nonprofit
@@ -39,12 +40,13 @@ function About() {
 
           </div>
         </div>
+
         <div className="container">
           <div className="row align-items-center">
 
             <div className="col-lg-1"></div>
             <div className="col-lg-12">
-              <h1 data-aos="fade-up">Our Goals</h1>
+              <h1 className='animate__animated animate__fadeInUp' style={{ color: "#918CA1", fontFamily: "Work Sans,sans-serif", fontWeight: "800" }}>Our Goals</h1>
               <h2 className="heading mb-3 animate__animated animate__fadeInUp animate__delay-1s"></h2>
 
               <p className='animate__animated animate__fadeInUp animate__delay-2s'>At Silverline, we want to solve the education divide, one
@@ -60,13 +62,12 @@ function About() {
           </div>
         </div>
 
-
         <div className="container">
           <div className="row align-items-center">
 
             <div className="col-lg-1"></div>
             <div className="col-lg-12">
-              <h1 data-aos="fade-up">Our Target Group</h1>
+              <h1 className='animate__animated animate__fadeInUp' style={{ color: "#918CA1", fontFamily: "Work Sans,sans-serif", fontWeight: "800" }}>Our Target Group</h1>
               <h2 className="heading mb-3 animate__animated animate__fadeInUp animate__delay-1s"></h2>
 
               <p className='animate__animated animate__fadeInUp animate__delay-2s'>Silverline is primarily for students in high school.
