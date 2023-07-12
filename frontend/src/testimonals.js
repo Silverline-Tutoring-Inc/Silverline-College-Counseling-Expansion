@@ -242,15 +242,71 @@ root.render(
 						</div>
 					</div>
 				</div>
-				<div className="text-center" style={{marginBottom:"0px"}}>
-			<p className="" style={{paddingTop:"20px"}}><a
-					href="get-involved.html" className="btn btn-primary text-lg-center">Get Involved Today!</a></p>
-		</div>
-			</div>
-		</div>
-    </div>
-    
-  </div>
+				<div className="site-footer">
+      					<div className="container align-items-center">
+        					<div className="row align-self-lg-center">
+          						<div className="col-lg-3">
+            							<div className="widget">
+              							<h3>Silverline Tutoring</h3>
+              							<p>
+                						Silverline Tutoring is an educational 501(c)(3) nonprofit organization connecting tutors and
+                						students in a community with over 5000 dedicated members. Founded by college and high school students,
+                						we recognize the difficulty of learning—we’ve all been there.
+              							</p>
+            							</div>
+          						</div>
+          						<div className="col-lg-1"></div>
+          						<div className="col-lg-2">
+            							<div className="widget">
+              								<h3>Navigation</h3>
+            							</div>
+         						</div>
+						        <div className="col-lg-1"></div>
+          						<div className="col-lg-3">
+            							<div className="widget">
+              								<h3>Contact</h3>
+              								<address style={{ color: '#AFA99E' }}>Massachusetts, United States</address>
+              								<ul className="list-unstyled links mb-4">
+                								<li><a href="tel://7862959992">‭(786) 295-9992</a></li>
+                								<li><a href="mailto:silverlinetutoring2021@gmail.com">silverlinetutoring2021@gmail.com</a></li>
+              								</ul>
+            							</div>
+          						</div>
+        					</div>
+        					<hr />
+        					<div className="row">
+          						<div className="col-lg-6 text-end">
+           							<ul className="list-unstyled social">
+              								<li>
+                								<a href="https://discord.gg/kD8aMaX2gP">
+                  									<span className="icon-link"></span>
+                								</a>
+              								</li>
+              								<li>
+                								<a href="https://www.instagram.com/silverlinetutoringinc/?igshid=YmMyMTA2M2Y%3D">
+                  									<span className="icon-instagram"></span>
+                								</a>
+              								</li>
+              								<li>
+                								<a href="https://www.youtube.com/channel/UCc-c1_wUoQPavLeKE5I2_aA">
+                  									<span className="icon-youtube"></span>
+                								</a>
+              								</li>
+              								<li>
+                								<a href="https://m.facebook.com/people/Silverline-Tutoring/100078405522496/">
+                  									<span className="icon-facebook"></span>
+                								</a>
+              								</li>
+              								<li>
+                								<a href="https://www.linkedin.com/company/silverline-tutoring-services/">
+                  									<span className="icon-linkedin"></span>
+                								</a>
+              								</li>
+            							</ul>
+          						</div>
+        					</div>
+      					</div>
+    				</div>
 );
 
 // If you want to start measuring performance in your app, pass a function
