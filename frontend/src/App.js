@@ -8,7 +8,7 @@ import Partners from "./components/Partners";
 import Lectures from "./components/Lectures";
 import Reviews from "./components/Reviews";
 import Services from "./components/Services.js";
-import Team from "./components/Team";
+import Team from "./components/Team/Team";
 import OurCommunity from "./components/OurCommunity/OurCommunity";
 import Testimonials from "./components/Testimonials";
 import Faq from "./components/Faq";
@@ -16,11 +16,13 @@ import About from "./components/About";
 import NavBar from "./components/NavBar";
 import { useEffect } from "react";
 import AOS from "aos";
-import "aos/dist/aos.css"
+import "aos/dist/aos.css";
 import GetInvolved from "./components/GetInvolved";
 
 function App() {
-	useEffect(() => { AOS.init() }, []);
+	useEffect(() => {
+		AOS.init();
+	}, []);
 	return (
 		<div className="App">
 			<Router>
