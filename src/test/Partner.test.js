@@ -42,7 +42,7 @@ test('Checks that the components are rendered correctly', () => {
     getByText("Sultan's Marketing"),
     getByText("Panda Express"),
     getByText("Equality in Forensics"),
-    getByText("Chipotle Mexican Grill"),
+    getByText("Chipotle of Drumhill Chelmsford, MA"),
     getByText("The Wish Project"),
     getByText("Chelmsford High School"),
   ]
