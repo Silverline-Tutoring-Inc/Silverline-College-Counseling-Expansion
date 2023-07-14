@@ -3,22 +3,22 @@ import NavBar from "../NavBar";
 import { board } from "./dummy";
 import TeamCard from "./TeamCard";
 
-const cardLoop = () => {
-	let cards = [];
-	for (let i = 0; i < board.length; i++) {
-		cards.push(
-			<TeamCard
-				name={board[i].name}
-				img={board[i].img}
-				desc={board[i].desc}
-				education={board[i].education}
-				hobbies={board[i].hobbies}
-				linkedin={board[i].linkedin}
-			/>
-		);
-	}
-	return cards;
-};
+// const cardLoop = () => {
+// 	let cards = [];
+// 	for (let i = 0; i < board.length; i++) {
+// 		cards.push(
+// 			<TeamCard
+// 				name={board[i].name}
+// 				img={board[i].img}
+// 				desc={board[i].desc}
+// 				education={board[i].education}
+// 				hobbies={board[i].hobbies}
+// 				linkedin={board[i].linkedin}
+// 			/>
+// 		);
+// 	}
+// 	return cards;
+// };
 
 function Team() {
 
@@ -29,7 +29,10 @@ function Team() {
 	useEffect(() => {
 		fetch("http://localhost:1337/api/members")
 			.then(res => res.json())
-			.then(data => setMembers(data))
+			.then(res => {
+				console.log("data: ", res.data)
+				setMembers(res.data)
+			})
 	}, [])
 
 	return (
@@ -41,7 +44,7 @@ function Team() {
 					style={{ paddingTop: "5rem" }}
 				>
 					{
-						members.map(m => <TeamCard {...m} />)
+						members.map(m => <TeamCard {...m.attributes} />)
 					}
 				</div>
 			</div>

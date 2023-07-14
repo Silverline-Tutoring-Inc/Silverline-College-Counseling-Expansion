@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const TeamCard = ({ name, img, desc, education, hobbies, linkedin }) => {
+const TeamCard = ({ name, img, description, education, hobbies, linkedin }) => {
 	// const [show, setShow] = useState(false);
 
 	// const showCountries = () => {
@@ -19,14 +19,14 @@ const TeamCard = ({ name, img, desc, education, hobbies, linkedin }) => {
 	let showEducation = false;
 	let showHobbies = false;
 	let showLinkedin = false;
-	if (education.length > 0) {
+	if (education && education.length > 0) {
 		showEducation = true;
 	}
-	if (hobbies.length > 0) {
+	if (hobbies && hobbies.length > 0) {
 		showHobbies = true;
 	}
 
-	if (linkedin.length > 0) {
+	if (linkedin && linkedin.length > 0) {
 		showLinkedin = true;
 	}
 
@@ -56,8 +56,8 @@ const TeamCard = ({ name, img, desc, education, hobbies, linkedin }) => {
 						</a>
 					) : null}
 					<div class=" m-body">
-						<h5 style={{ textAlign: "center" }}>Rishi Ajmera</h5>
-						<p>{desc}</p>
+						<h5 style={{ textAlign: "center" }}>{name}</h5>
+						<p>{description}</p>
 						{showEducation === true ? (
 							<p>
 								Education: <br />
