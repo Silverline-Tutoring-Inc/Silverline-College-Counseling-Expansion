@@ -24,3 +24,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .gitignore
+/backend/.env
+/backend/.tmp
+/backend/.strapi-updater.json
+
