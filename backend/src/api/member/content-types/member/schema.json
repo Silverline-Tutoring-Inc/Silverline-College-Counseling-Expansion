@@ -4,8 +4,7 @@
   "info": {
     "singularName": "member",
     "pluralName": "members",
-    "displayName": "Member",
-    "description": ""
+    "displayName": "Member"
   },
   "options": {
     "draftAndPublish": true
@@ -16,18 +15,17 @@
       "type": "string"
     },
     "description": {
-      "type": "text"
+      "type": "string"
     },
     "img": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ]
+      ],
+      "type": "media",
+      "multiple": true
     },
     "education": {
       "type": "string"
