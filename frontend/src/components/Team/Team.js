@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import NavBar from "../NavBar";
-import { board } from "./dummy";
 import TeamCard from "./TeamCard";
 
 // const cardLoop = () => {
@@ -27,12 +26,12 @@ function Team() {
 	const [members, setMembers] = useState([])
 
 	useEffect(() => {
-		fetch("http://localhost:1337/api/members")
+		(async () => await fetch("http://localhost:1337/api/members?populate=*")
 			.then(res => res.json())
 			.then(res => {
 				console.log("data: ", res.data)
 				setMembers(res.data)
-			})
+			}))();
 	}, [])
 
 	return (

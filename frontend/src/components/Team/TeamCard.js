@@ -22,7 +22,7 @@ const TeamCard = ({ name, img, description, education, hobbies, linkedin }) => {
 	if (education && education.length > 0) {
 		showEducation = true;
 	}
-	if (hobbies && hobbies.length > 0) {
+	if (hobbies.data && hobbies.data.length > 0) {
 		showHobbies = true;
 	}
 
@@ -32,8 +32,8 @@ const TeamCard = ({ name, img, description, education, hobbies, linkedin }) => {
 
 	const hobbiesLi = [];
 	if (showHobbies === true) {
-		hobbies.forEach((hobby) =>
-			hobbiesLi.push(<li className="mx-4">{hobby}</li>)
+		hobbies.data.forEach((hobby) =>
+			hobbiesLi.push(<li className="mx-4">{hobby.attributes.hobby}</li>)
 		);
 	}
 
@@ -52,7 +52,7 @@ const TeamCard = ({ name, img, description, education, hobbies, linkedin }) => {
 							style={{ backgroundColor: "transparent" }}
 							class="text-center"
 						>
-							<img src={img} alt={name} class="img-fluid" />
+							<img src={"http://localhost:1337" + img.data[0].attributes.url} alt={name} class="img-fluid" />
 						</a>
 					) : null}
 					<div class=" m-body">

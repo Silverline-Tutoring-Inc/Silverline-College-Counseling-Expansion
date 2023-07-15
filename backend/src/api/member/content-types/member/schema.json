@@ -15,9 +15,12 @@
     "name": {
       "type": "string"
     },
+    "description": {
+      "type": "text"
+    },
     "img": {
       "type": "media",
-      "multiple": false,
+      "multiple": true,
       "required": false,
       "allowedTypes": [
         "images",
@@ -26,19 +29,16 @@
         "audios"
       ]
     },
-    "description": {
-      "type": "text"
-    },
     "education": {
-      "type": "text"
+      "type": "string"
+    },
+    "linkedin": {
+      "type": "string"
     },
     "hobbies": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::hobby.hobby"
-    },
-    "linkedin": {
-      "type": "string"
     }
   }
 }
