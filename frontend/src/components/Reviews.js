@@ -72,7 +72,7 @@ const Review = () => {
 			<NavBar pageName="reviews" />
 			<h1 style={styles.reviewsTitle}>Reviews</h1>
 			<p style={styles.reviewsSubtitle}>
-				Hear what others have to say about Silverline Tutoring.
+				Hear what others have to say about Silverline Educational Advisory Services.
 			</p>
 			<p style={styles.reviewsSubtitle}>
 				If you would like to leave a more personalized comment, please
@@ -147,7 +147,7 @@ const Review = () => {
 						</div>
 					</div>
 					<p style={styles.reviewContent}>
-						Silverline Tutoring is a great organization given the
+						Silverline Educational Advisory Services is a great organization given the
 						fact that it is free, has several tutors almost always
 						active, and has a very active and friendly community. I
 						really enjoy being tutored for free and it helps the
@@ -174,7 +174,7 @@ const Review = () => {
 					</div>
 					<p style={styles.reviewContent}>
 						I was looking for help on computer science and requested
-						a tutor at Silverline Tutoring. Within a couple of hours
+						a tutor at Silverline Educational Advisory Services. Within a couple of hours
 						I was paired with a tutor and we met the next day over
 						zoom. My tutor was able to break down the topic and made
 						it really easy for me to understand. He helped me pass
@@ -220,7 +220,7 @@ const Review = () => {
 						</div>
 					</div>
 					<p style={styles.reviewContent}>
-						Silverline Tutoring is simply the best, I got so much
+						Silverline Educational Advisory Services is simply the best, I got so much
 						help on my homework and the helpers quickly answered all
 						the questions I had.
 					</p>
@@ -244,7 +244,7 @@ const Review = () => {
 					<p style={styles.reviewContent}>
 						I had a couple of problems with my intro to chem class
 						in college and I got all the help I needed from the
-						chemistry tutors at Silverline Tutoring. Would recommend
+						chemistry tutors at Silverline Educational Advisory Services. Would recommend
 						it to anyone who is looking for help!
 					</p>
 				</div>
@@ -343,7 +343,7 @@ const Review = () => {
 						</div>
 					</div>
 					<p style={styles.reviewContent}>
-						Silverline tutoring’s superior organization, resources,
+						Silverline Educational Advisory Services’s superior organization, resources,
 						and dedication to providing students with worthwhile
 						tutoring has allowed me as a tutor to both increase my
 						tutoring skills and have fun making an impact in the
