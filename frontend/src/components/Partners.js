@@ -81,7 +81,7 @@ const Partners = () => {
 										have used the Pond to develop college
 										lists, and they also have over 15,000
 										active users of the platform. The Pond
-										and Silverline Tutoring work together to
+										and Silverline Educational Advisory Services work together to
 										help students from all different
 										backgrounds.
 									</p>
@@ -354,7 +354,7 @@ const Partners = () => {
 										locations, it is the largest
 										Asian-segment restaurant chain in the
 										United States. They are working with
-										Silverline Tutoring to help fundraise
+										Silverline Educational Advisory Services to help fundraise
 										and donate resources to children in
 										India and Ethopia.
 									</p>
@@ -445,7 +445,7 @@ const Partners = () => {
 										restaurants in that operates in over 5
 										different countries with nearly 3,000
 										locations. In September of 2022, they
-										worked with Silverline Tutoring to help
+										worked with Silverline Educational Advisory Services to help
 										fundraise money. This fundraiser allowed
 										Silverline to become one step closer to
 										solving the educational divide. Money
@@ -534,7 +534,7 @@ const Partners = () => {
 										Chelmsford High School
 									</h6>
 									<p>
-										Silverline Tutoring is partnered with
+										Silverline Educational Advisory Services is partnered with
 										Chelmsford High School. Chelmsford High
 										School is a high school located in
 										Chelmsford, Massachusetts and serves
