@@ -52,7 +52,7 @@ export default function GetInvolved() {
 							fontWeight: 500,
 						}}
 					>
-						Getting involved with Silverline Tutoring has never been
+						Getting involved with Silverline Educational Advisory Services has never been
 						easier. Below are two forms for applicants based on
 						interested in being tutored or becoming a tutor. The
 						process for either is relatively simple.
