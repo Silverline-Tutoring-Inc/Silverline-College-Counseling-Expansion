@@ -57,10 +57,10 @@ function FAQ() {
                   </div>
 
                   <div data-aos="fade-up" data-aos-delay="700">
-                  <h3 className="question">6. Who runs Silverline Tutoring</h3>
+                  <h3 className="question">6. Who runs Silverline Educational Advisory Services</h3>
                   {/* add the link as necessary this description from old website*/}
                   <p className="answer" data-testid="faq-answer">
-                  Silverline tutoring is run by highschoolers and college students. Our full team can
+                  Silverline Educational Advisory Services is run by highschoolers and college students. Our full team can
                   be found <a href="team.html">here</a>.
                   </p>
                </div>
