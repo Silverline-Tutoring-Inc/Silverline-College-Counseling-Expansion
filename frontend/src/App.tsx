@@ -1,14 +1,14 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import "./css/style.css";
-import Reach from "./components/Reach.js";
-import Hero from "./components/Hero.js";
-import Footer from "./components/Footer.js";
+import Reach from "./components/Reach";
+import Hero from "./components/Hero";
+import Footer from "./components/Footer";
 import Method from "./components/Method/Method";
 import Partners from "./components/Partners";
 import Lectures from "./components/Lectures";
 import Reviews from "./components/Reviews";
-import Services from "./components/Services/Services.js";
+import Services from "./components/Services/Services";
 import Team from "./components/Team/Team";
 import OurCommunity from "./components/OurCommunity/OurCommunity";
 import Testimonials from "./components/Testimonials";
