@@ -11,13 +11,13 @@ const content = [
 		name: "Shanti",
 		des: "A Parent",
 		content:
-			"“This service is so great, my child was struggling and lack confidence in math in general. Her tutor was great, and helped her through many problems and was patient with her. I would recommend Silverline Tutoring to any parent I meet”",
+			"“This service is so great, my child was struggling and lack confidence in math in general. Her tutor was great, and helped her through many problems and was patient with her. I would recommend Silverline Educational Advisory Services to any parent I meet”",
 	},
 	{
 		name: "Li Jian",
 		des: "8th Grader",
 		content:
-			"“Silverline Tutoring is great! I really liked the instant help feature on discord. I was able to get help with any questions I had instantly.”",
+			"“Silverline Educational Advisory Services is great! I really liked the instant help feature on discord. I was able to get help with any questions I had instantly.”",
 	},
 	{
 		name: "Rithin",
