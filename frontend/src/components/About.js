@@ -37,7 +37,7 @@ const About = () => {
               ></h2>
 
               <p data-aos="fade-up" data-aos-delay="200">
-                Silverline Tutoring is an educational 501(c)(3)
+                Silverline Educational Advisory Services is an educational 501(c)(3)
                 nonprofit connecting tutors and students within
                 our organization of over 5000 dedicated members.
                 Founded by college and high school students,
