@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="bg-dark text-light py-4" style={{ backgroundColor: "#3d446a", fontFamily: "Serif" }}>
       <div className="site-footer" style={{ backgroundColor: "#3d446a", display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gridGap: "20px", padding: "40px" }}>
         <div style={{ display: "flex", flexDirection: "column", marginLeft: "0px" }}>
-          <h3 style={{ color: "#fffefb", fontSize: "24px", marginBottom: "20px" }}>Silverline Tutoring</h3>
+          <h3 style={{ color: "#fffefb", fontSize: "24px", marginBottom: "20px" }}>Silverline Educational Advisory Services</h3>
           <p style={{ color: "#fffefb", fontSize: "16px", lineHeight: "1.6" }}>We made Silverline consulting exclusively designed for high schoolers, by high schoolers and college students. We understand the unique challenges and aspirations of students like you, and that's why we're here to guide you through the exciting journey of college admissions. Our team, comprised of experienced college students and recent graduates, brings firsthand knowledge and expertise to help you navigate the application process, craft compelling essays, choose the right colleges, and maximize your chances of getting accepted.</p>
         </div>
         <div style={{ marginLeft: "100px" }}>
@@ -30,7 +30,7 @@ const Footer = () => {
       </div>
       <div className="row" style={{ backgroundColor: "#3d446a" }}>
         <div className="col" style={{ backgroundColor: "#3d446a" }}>
-          <p className="text-center" style={{ color: "#fffefb", fontSize: "14px", margin: 0 }}>© {new Date().getFullYear()} Silverline Tutoring Services | All Rights Reserved</p>
+          <p className="text-center" style={{ color: "#fffefb", fontSize: "14px", margin: 0 }}>© {new Date().getFullYear()} Silverline Educational Advisory Services | All Rights Reserved</p>
         </div>
       </div>
     </footer>
