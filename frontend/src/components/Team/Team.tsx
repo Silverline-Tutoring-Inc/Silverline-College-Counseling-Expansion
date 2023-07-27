@@ -20,10 +20,9 @@ import TeamCard from "./TeamCard";
 // };
 
 function Team() {
-
   // setup strapi fetching
 
-  const [members, setMembers] = useState([])
+  const [members, setMembers] = useState([]);
 
   // useEffect(() => {
   // 	(async () => await fetch("http://localhost:1337/api/members?populate=*")
@@ -38,17 +37,12 @@ function Team() {
     <>
       <NavBar pageName="team" />
       <div className="container">
-        <div
-          class="row align-items-stretch"
-          style={{ paddingTop: "5rem" }}
-        >
-          {
-            members.map(m => <TeamCard {...m.attributes} />)
-          }
+        <div className="row align-items-stretch" style={{ paddingTop: "5rem" }}>
+          {members.map((m) => (
+            <TeamCard {...m.attributes} />
+          ))}
         </div>
       </div>
-
-
     </>
   );
 }

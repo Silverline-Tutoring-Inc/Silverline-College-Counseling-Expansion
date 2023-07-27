@@ -72,7 +72,9 @@ const FutureIdeas = () => {
   };
 
   const buttonStyleSecond = {
-    backgroundColor: isHoverSecondButton ? "#181A1B" : "rgba(82, 113, 255, 0.8)",
+    backgroundColor: isHoverSecondButton
+      ? "#181A1B"
+      : "rgba(82, 113, 255, 0.8)",
     color: "#EAEAEA",
     border: "2px solid #5271FF",
     padding: "10px 25px",
@@ -84,8 +86,12 @@ const FutureIdeas = () => {
 
   return (
     <div style={containerStyle}>
-      <h2 style={subHeaderStyle} data-aos="fade-up">FUTURE IDEAS</h2>
-      <h1 style={headerStyle} data-aos="fade-up">What's Next?</h1>
+      <h2 style={subHeaderStyle} data-aos="fade-up">
+        FUTURE IDEAS
+      </h2>
+      <h1 style={headerStyle} data-aos="fade-up">
+        What's Next?
+      </h1>
       <p style={textStyle} data-aos="fade-up">
         Looking forward, we hope to partner with underfunded schools and provide
         resources and tutoring for students who are looking for extra help.
@@ -128,4 +134,3 @@ const FutureIdeas = () => {
 };
 
 export default FutureIdeas;
-

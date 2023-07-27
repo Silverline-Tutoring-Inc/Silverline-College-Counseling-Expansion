@@ -1,14 +1,14 @@
-import React from 'react';
-import { render } from '@testing-library/react';
-import App from '../App';
+import React from "react";
+import { render } from "@testing-library/react";
+import App from "../App";
 
-test('renders the navigation menu', () => {
+test("renders the navigation menu", () => {
   const { getByText } = render(<App />);
 
-  const homeLink = getByText('Home');
-  const aboutLink = getByText('About Us ▾');
-  const servicesLink = getByText('Services');
-  const contactLink = getByText('Contact Us');
+  const homeLink = getByText("Home");
+  const aboutLink = getByText("About Us ▾");
+  const servicesLink = getByText("Services");
+  const contactLink = getByText("Contact Us");
 
   expect(homeLink).toBeInTheDocument();
   expect(aboutLink).toBeInTheDocument();
@@ -16,14 +16,14 @@ test('renders the navigation menu', () => {
   expect(contactLink).toBeInTheDocument();
 });
 
-test('renders the testimonials section', () => {
+test("renders the testimonials section", () => {
   const { getByText } = render(<App />);
 
-  const testimonialsTitle = getByText('Testimonials');
-  const testimonial1 = getByText('Rithvik');
-  const testimonial2 = getByText('Shanti');
-  const testimonial3 = getByText('Li Jian');
-  const testimonial4 = getByText('Rithin');
+  const testimonialsTitle = getByText("Testimonials");
+  const testimonial1 = getByText("Rithvik");
+  const testimonial2 = getByText("Shanti");
+  const testimonial3 = getByText("Li Jian");
+  const testimonial4 = getByText("Rithin");
 
   expect(testimonialsTitle).toBeInTheDocument();
   expect(testimonial1).toBeInTheDocument();
@@ -31,4 +31,3 @@ test('renders the testimonials section', () => {
   expect(testimonial3).toBeInTheDocument();
   expect(testimonial4).toBeInTheDocument();
 });
-

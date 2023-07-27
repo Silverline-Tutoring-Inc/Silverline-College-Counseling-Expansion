@@ -44,15 +44,19 @@ const QuickHelp = () => {
           <h1 style={titleStyle} data-aos="fade-up">
             Quick Help
           </h1>
-          <h2 className="heading mb-3" data-aos="fade-up" data-aos-delay="100"></h2>
+          <h2
+            className="heading mb-3"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          ></h2>
           <p style={bodyStyle} data-aos="fade-up" data-aos-delay="200">
-            Silverline has a dedicated Discord server where students can join
-            to connect with our community and access various resources. In our
-            Discord server, you can find 50+ helpers who are ready to assist
-            you with your questions and provide quick help. Whether you need
-            help with a specific reading problem, calculus question, or any
-            other academic inquiry, our community helpers are available to
-            support you.
+            Silverline has a dedicated Discord server where students can join to
+            connect with our community and access various resources. In our
+            Discord server, you can find 50+ helpers who are ready to assist you
+            with your questions and provide quick help. Whether you need help
+            with a specific reading problem, calculus question, or any other
+            academic inquiry, our community helpers are available to support
+            you.
           </p>
           <p style={bodyStyle} data-aos="fade-up" data-aos-delay="300">
             To join our Discord server, simply visit our website and click on

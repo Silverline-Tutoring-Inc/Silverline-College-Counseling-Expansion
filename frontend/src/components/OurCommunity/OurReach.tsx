@@ -16,14 +16,25 @@ const OurReach = () => {
   return (
     <div style={{ backgroundColor: "#181A1B", padding: "7rem" }}>
       <div className="container">
-        <h1 style={titleStyle} data-aos="fade-up">Our Reach</h1>
-        <h2 className="heading mb-3" data-aos="fade-up" data-aos-delay="100"></h2>
+        <h1 style={titleStyle} data-aos="fade-up">
+          Our Reach
+        </h1>
+        <h2
+          className="heading mb-3"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        ></h2>
         <p style={bodyStyle} data-aos="fade-up" data-aos-delay="200">
-          In our years of service, our organization has expanded into
-          numerous continents and continues to grow daily:
+          In our years of service, our organization has expanded into numerous
+          continents and continues to grow daily:
         </p>
 
-        <div className="container text-white" style={{ display: "flex" }} data-aos="fade-up" data-aos-delay="100">
+        <div
+          className="container text-white"
+          style={{ display: "flex" }}
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
           <div
             style={{
               display: "flex",
@@ -36,12 +47,7 @@ const OurReach = () => {
             <div>
               <CollapseBtn
                 region={"North America"}
-                countries={[
-                  "Canada",
-                  "United States",
-                  "Mexico",
-                  "Puerto Rico",
-                ]}
+                countries={["Canada", "United States", "Mexico", "Puerto Rico"]}
               />
             </div>
             <div>
@@ -87,11 +93,7 @@ const OurReach = () => {
             <div>
               <CollapseBtn
                 region={"Australia"}
-                countries={[
-                  "Australia",
-                  "New Zealand",
-                  "Papua New Guinea",
-                ]}
+                countries={["Australia", "New Zealand", "Papua New Guinea"]}
               />
             </div>
           </div>

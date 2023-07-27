@@ -36,7 +36,7 @@ const NavBar = ({ pageName }) => {
       break;
     default:
       throw new Error(
-        "Please look at components/NavBar.js detectElement() for the full list"
+        "Please look at components/NavBar.js detectElement() for the full list",
       );
   }
 
@@ -84,39 +84,23 @@ const NavBar = ({ pageName }) => {
                 </li>
               </ul>
             </li>
-            <li
-              className={
-                elementName === "services" ? "active" : "non"
-              }
-            >
+            <li className={elementName === "services" ? "active" : "non"}>
               <Link to="/services">Services</Link>
             </li>
-            <li
-              className={
-                elementName === "community" ? "active" : "non"
-              }
-            >
+            <li className={elementName === "community" ? "active" : "non"}>
               <Link to="/community">Our Community</Link>
             </li>
-            <li
-              className={
-                elementName === "getInvolved" ? "active" : "non"
-              }
-            >
+            <li className={elementName === "getInvolved" ? "active" : "non"}>
               <Link to="/getinvolved">Get Involved</Link>
             </li>
-            <li
-              className={elementName === "reviews" ? "active" : "non"}
-            >
+            <li className={elementName === "reviews" ? "active" : "non"}>
               <Link to="/reviews">Our Reviews</Link>
             </li>
           </ul>
 
           <ul className="js-clone-nav d-none d-lg-inline-block text-end site-menu float-end">
             <li className="cta-button">
-              <a href="mailto:silverlinetutoring2021@gmail.com">
-                Contact Us
-              </a>
+              <a href="mailto:silverlinetutoring2021@gmail.com">Contact Us</a>
             </li>
             <li className="social-top">
               <a href="https://discord.gg/kD8aMaX2gP" target="_0">

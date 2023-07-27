@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 
 const Reach = () => {
   return (
@@ -28,10 +28,7 @@ const Reach = () => {
                   >
                     66
                   </h3>
-                  <p
-                    className="card-text"
-                    style={{ fontSize: "1.4rem" }}
-                  >
+                  <p className="card-text" style={{ fontSize: "1.4rem" }}>
                     Countries
                   </p>
                 </div>
@@ -53,10 +50,7 @@ const Reach = () => {
                   >
                     5000
                   </h3>
-                  <p
-                    className="card-text"
-                    style={{ fontSize: "1.4rem" }}
-                  >
+                  <p className="card-text" style={{ fontSize: "1.4rem" }}>
                     Members
                   </p>
                 </div>
@@ -78,10 +72,7 @@ const Reach = () => {
                   >
                     6752
                   </h3>
-                  <p
-                    className="card-text"
-                    style={{ fontSize: "1.4rem" }}
-                  >
+                  <p className="card-text" style={{ fontSize: "1.4rem" }}>
                     Hours of Tutoring
                   </p>
                 </div>
@@ -103,10 +94,7 @@ const Reach = () => {
                   >
                     102
                   </h3>
-                  <p
-                    className="card-text"
-                    style={{ fontSize: "1.4rem" }}
-                  >
+                  <p className="card-text" style={{ fontSize: "1.4rem" }}>
                     Tutors All Time
                   </p>
                 </div>
@@ -114,8 +102,19 @@ const Reach = () => {
             </div>
           </div>
         </div>
-        <p className="text-center" data-aos="fade-up" data-aos-delay="300" style={{ paddingTop: "20px" }}><a
-          href="community.html#target" className="btn btn-primary text-lg-center">View More Statistics</a></p>
+        <p
+          className="text-center"
+          data-aos="fade-up"
+          data-aos-delay="300"
+          style={{ paddingTop: "20px" }}
+        >
+          <a
+            href="community.html#target"
+            className="btn btn-primary text-lg-center"
+          >
+            View More Statistics
+          </a>
+        </p>
       </div>
     </>
   );

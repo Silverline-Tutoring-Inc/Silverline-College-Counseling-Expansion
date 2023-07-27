@@ -1,5 +1,5 @@
-import * as React from "react";
-import aboutImg from "../images/Home/about_1.webp"
+import React from "react";
+import aboutImg from "../images/Home/about_1.webp";
 
 const AboutSection = () => {
   return (
@@ -19,18 +19,16 @@ const AboutSection = () => {
             </h2>
 
             <p data-aos="fade-up" data-aos-delay="200">
-              Silverline Tutoring is an educational 501(c)(3)
-              nonprofit connecting tutors and students within our
-              organization of over 5000 dedicated members. Founded
-              by college and high school students, this company
-              recognizes the difficulty of learning—we’ve all been
-              there.
+              Silverline Tutoring is an educational 501(c)(3) nonprofit
+              connecting tutors and students within our organization of over
+              5000 dedicated members. Founded by college and high school
+              students, this company recognizes the difficulty of learning—we’ve
+              all been there.
             </p>
             <p data-aos="fade-up" data-aos-delay="200">
-              From the depths of math to complex texts in English,
-              every student has struggled. We want to bridge this
-              divide in education by providing free tutoring to
-              any student.
+              From the depths of math to complex texts in English, every student
+              has struggled. We want to bridge this divide in education by
+              providing free tutoring to any student.
             </p>
             <p className="my-6" data-aos="fade-up" data-aos-delay="300">
               <a href="about.html" className="btn btn-primary">

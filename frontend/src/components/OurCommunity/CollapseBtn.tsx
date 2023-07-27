@@ -9,7 +9,7 @@ const CollapseBtn = ({ region, countries }) => {
   };
   const countriesLi = [];
   countries.forEach((country) =>
-    countriesLi.push(<li className="mx-4">{country}</li>)
+    countriesLi.push(<li className="mx-4">{country}</li>),
   );
 
   return (
@@ -31,13 +31,13 @@ const CollapseBtn = ({ region, countries }) => {
               className="my-0"
               style={{
                 fontWeight: "bold",
-                textAlight: "left",
+                textAlign: "left",
               }}
             >
               <i className="fa-sharp fa-solid fa-minus" /> {region}
             </div>
           ) : (
-            <p className="my-0" text-left>
+            <p className="my-0 text-left">
               <i className="fa-sharp fa-solid fa-plus" /> {region}
             </p>
           )}
@@ -45,9 +45,7 @@ const CollapseBtn = ({ region, countries }) => {
 
         <br></br>
 
-        {show ? (
-          <ul className="text-white py-3 my-0">{countriesLi}</ul>
-        ) : null}
+        {show ? <ul className="text-white py-3 my-0">{countriesLi}</ul> : null}
       </div>
     </>
   );

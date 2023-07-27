@@ -1,3 +1,4 @@
+import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import "./css/style.css";
@@ -13,7 +14,7 @@ import Team from "./components/Team/Team";
 import OurCommunity from "./components/OurCommunity/OurCommunity";
 import Testimonials from "./components/Testimonials";
 import Faq from "./components/Faq";
-import About from "./components/About.tsx";
+import About from "./components/About";
 import NavBar from "./components/NavBar";
 import { useEffect } from "react";
 import AOS from "aos";

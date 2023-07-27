@@ -10,19 +10,19 @@ import Banner from "./Banner";
 import NavBar from "../NavBar";
 
 const OurCommunity = () => {
-	return (
-		<>
-			<NavBar pageName="community" />
-			<Banner />
-			<AboutOurCommunity />
+  return (
+    <>
+      <NavBar pageName="community" />
+      <Banner />
+      <AboutOurCommunity />
       <UpcomingEvents />
-			<Statistics />
-			<QuickHelp />
-			<OurReach />
-			<Opportunities />
-			<Footer />
-		</>
-	);
+      <Statistics />
+      <QuickHelp />
+      <OurReach />
+      <Opportunities />
+      <Footer />
+    </>
+  );
 };
 
 export default OurCommunity;
