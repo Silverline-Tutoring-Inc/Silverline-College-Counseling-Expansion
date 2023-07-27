@@ -4,8 +4,12 @@
     "sourceMap": true, // allow sourcemap support
     "strictNullChecks": true, // enable strict null checks as a best practice
     "module": "es6", // specify module code generation
-    "jsx": "jsx", // use typescript to transpile jsx to js
+    "jsx": "react", // use typescript to transpile jsx to js
     "target": "es5", // specify ECMAScript target version
+    "types": [
+      "vite/client",
+      "vite-plugin-svgr/client"
+    ],
     "allowJs": true // allow a partial TypeScript and JavaScript codebase
   },
   "include": [

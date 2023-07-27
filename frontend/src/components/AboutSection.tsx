@@ -1,3 +1,5 @@
+import aboutImg from "../images/Home/about_1.png"
+
 const AboutSection = () => {
 	return (
 		<div class="section section-2">

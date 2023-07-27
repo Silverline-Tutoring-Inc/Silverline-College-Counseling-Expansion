@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 
 const Reach = () => {
   return (
@@ -114,8 +114,8 @@ const Reach = () => {
             </div>
           </div>
         </div>
-        <p class="text-center" data-aos="fade-up" data-aos-delay="300" style={{ paddingTop: "20px" }}><a
-          href="community.html#target" class="btn btn-primary text-lg-center">View More Statistics</a></p>
+        <p className="text-center" data-aos="fade-up" data-aos-delay="300" style={{ paddingTop: "20px" }}><a
+          href="community.html#target" className="btn btn-primary text-lg-center">View More Statistics</a></p>
       </div>
     </>
   );
