@@ -1,8 +1,8 @@
 import * as React from "react";
-import eng from "../images/Home/eng.png";
-import flexibile from "../images/Home/flexibile.png";
-import community from "../images/Home/community.png";
-import quality from "../images/Home/quality.png";
+import eng from "../images/Home/eng.webp";
+import flexibile from "../images/Home/flexibile.webp";
+import community from "../images/Home/community.webp";
+import quality from "../images/Home/quality.webp";
 
 const ServicesSection = () => {
   return (
