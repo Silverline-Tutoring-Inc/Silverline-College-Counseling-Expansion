@@ -1,9 +1,12 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import { render, RenderResult } from "@testing-library/react";
 import GetInvolved from "../components/GetInvolved";
+import "@testing-library/jest-dom"; // Import jest-dom matchers
 
 describe("Get Involved Component", () => {
-  test("renders component without error", () => render(<GetInvolved />));
+  test("renders component without error", () => {
+    render(<GetInvolved />);
+  });
 
   test("displays banner image", () => {
     const { getByAltText } = render(<GetInvolved />);
