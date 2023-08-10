@@ -21,13 +21,13 @@ interface Member {
 const Team: React.FC = () => {
   const [members, setMembers] = useState<Member[]>([]);
 
-  // useEffect(() => {
-  //   (async () => await fetch("http://localhost:1337/api/members?populate=*")
-  //     .then(res => res.json())
-  //     .then(res => {
-  //       setMembers(res.data)
-  //     }))();
-  // }, [])
+  useEffect(() => {
+    (async () => await fetch("http://localhost:1337/api/members?populate=*")
+      .then(res => res.json())
+      .then(res => {
+        setMembers(res.data)
+      }))();
+  }, [])
 
   return (
     <>
