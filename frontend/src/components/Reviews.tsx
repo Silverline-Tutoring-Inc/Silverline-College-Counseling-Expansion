@@ -73,7 +73,7 @@ const Review: React.FC = () => {
       <NavBar pageName="reviews" />
       <h1 style={styles.reviewsTitle}>Reviews</h1>
       <p style={styles.reviewsSubtitle}>
-        Hear what others have to say about Silverline Tutoring.
+        Hear what others have to say about Silverline Educational Advisory Services.
       </p>
       <p style={styles.reviewsSubtitle}>
         If you would like to leave a more personalized comment, please email us.
