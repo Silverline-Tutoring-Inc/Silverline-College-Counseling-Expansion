@@ -45,7 +45,7 @@ const About: React.FC = () => {
               ></h2>
 
               <p data-aos="fade-up" data-aos-delay="200">
-              Silverline Tutoring is an educational 501(c)(3) nonprofit connecting high school students with enriching and inspiring resources to amplify their education and extracurricular performance within our organization of over 5000 dedicated members. Founded by college and high school students, this company recognizes the difficulty of navigating high school — we’ve all been there.
+              Silverline Educational Advisory Services is an educational 501(c)(3) nonprofit connecting high school students with enriching and inspiring resources to amplify their education and extracurricular performance within our organization of over 5000 dedicated members. Founded by college and high school students, this company recognizes the difficulty of navigating high school — we’ve all been there.
               </p>
 
               <p data-aos="fade-up" data-aos-delay="300">
