@@ -1,0 +1,49 @@
+.bgLight {
+	background-color: #d6d3cd !important;
+}
+
+.bgDark {
+	background-color: #181a1b !important;
+}
+
+.outerContainer {
+	width: 100% !important;
+	padding: 80px !important;
+	display: flex !important;
+	flex-direction: column !important;
+	align-items: center !important;
+}
+
+.innerContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	width: 50%;
+}
+
+.headerDark {
+	color: white;
+	font-weight: 600;
+}
+
+.headerLight {
+	color: black;
+	font-weight: 600;
+}
+
+.discordBtn {
+	background: #7289da; /* Discord color */
+	padding: 10px 20px;
+	margin-left: 50px;
+	border-radius: 50px;
+	text-decoration: none;
+	color: white;
+}
+.textDark {
+	color: #d6d3cd;
+	font-weight: 500;
+}
+.textLight {
+	color: #181a1b;
+	font-weight: 500;
+}

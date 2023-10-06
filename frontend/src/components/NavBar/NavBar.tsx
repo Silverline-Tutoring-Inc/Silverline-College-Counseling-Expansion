@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../images/logo4.svg";
-import { useTheme } from "./ThemeContext";
+import logo from "../../images/logo4.svg";
+import { useTheme } from "../ThemeContext";
+import styles from "./styles.module.css";
 
 interface NavBarProps {
   pageName?: string;
@@ -42,12 +43,14 @@ const NavBar: React.FC<NavBarProps> = ({ pageName }) => {
   }
 
   return (
-    <nav className={`site-nav ${theme} secondary-bg`}>
+    <nav
+      className={`site-nav ${theme === "dark" ? styles.bgDark : styles.bgLight
+        }`}
+    >
       <div className="container nav1">
         <img
-          style={{ maxHeight: "70px", marginTop: "-15px" }}
-          alt="silverline logo"
-          className="float-start"
+          alt="silverline tutoring logo"
+          className={`float-start ${styles.logo}`}
           src={logo}
         />
         <div className="site-navigation">
@@ -60,19 +63,7 @@ const NavBar: React.FC<NavBarProps> = ({ pageName }) => {
               <Link to="/">Home</Link>
             </li>
             <li className="has-children non">
-              <button
-                style={{
-                  background: "none",
-                  border: "none",
-                  color: "#D7D6DA",
-                  paddingLeft: "20px",
-                  font: "inherit",
-                  cursor: "pointer",
-                  outline: "inherit",
-                }}
-              >
-                About Us ▾
-              </button>
+              <button className={styles.btn}>About Us ▾</button>
               <ul className="dropdown">
                 <li>
                   <Link to="/services">Our Services</Link>
@@ -112,9 +103,7 @@ const NavBar: React.FC<NavBarProps> = ({ pageName }) => {
           </ul>
           <ul className="js-clone-nav d-none d-lg-inline-block text-end site-menu float-end">
             <li className="cta-button">
-              <a href="/getinvolved">
-                Join Us Today
-              </a>
+              <a href="/getinvolved">Join Us Today</a>
             </li>
             <li className="social-top">
               <a href="https://discord.gg/kD8aMaX2gP" target="_0">
@@ -147,7 +136,7 @@ const NavBar: React.FC<NavBarProps> = ({ pageName }) => {
               </a>
               <a
                 onClick={toggleTheme}
-                style={{ marginLeft: "3rem" }}
+                className={styles.toggleThemeBtn}
               >
                 {theme === "dark" ? (
                   <i className="fas fa-sun"></i>
