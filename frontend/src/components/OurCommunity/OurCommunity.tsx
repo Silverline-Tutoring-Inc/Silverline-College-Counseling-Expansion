@@ -10,19 +10,19 @@ import Banner from "./Banner";
 import NavBar from "../NavBar/NavBar";
 
 const OurCommunity: React.FC = () => {
-	return (
-		<>
-			<NavBar pageName="community" />
-			<Banner />
-			<AboutOurCommunity />
-			<UpcomingEvents />
-			<Statistics />
-			{/* <QuickHelp /> */}
-			<OurReach />
-			{/* <Opportunities /> */}
-			<Footer />
-		</>
-	);
+  return (
+    <>
+      <NavBar pageName="community" />
+      <Banner />
+      <AboutOurCommunity />
+      <UpcomingEvents />
+      <Statistics />
+      <QuickHelp />
+      <OurReach />
+      <Opportunities />
+      <Footer />
+    </>
+  );
 };
 
 export default OurCommunity;
