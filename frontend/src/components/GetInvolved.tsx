@@ -1,7 +1,6 @@
 import React from "react";
 // import banner from "../images/get-involved/banner.webp";
 import NavBar from "./NavBar";
-import "../assets/fonts.css";
 import Footer from "./Footer";
 
 const GetInvolved: React.FC = () => {

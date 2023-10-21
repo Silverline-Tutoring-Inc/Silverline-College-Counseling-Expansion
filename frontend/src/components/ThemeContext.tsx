@@ -13,14 +13,15 @@ type ThemeProviderProps = {
 };
 
 export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
-	const [theme, setTheme] = useState<Theme>("light");
+	const [theme, setTheme] = useState<Theme>("dark");
 
 	useEffect(() => {
 		document.body.className = theme;
 	}, [theme]);
 
 	const toggleTheme = () => {
-		setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+		setTheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
+		console.log("Theme: " + theme);
 	};
 
 	return (

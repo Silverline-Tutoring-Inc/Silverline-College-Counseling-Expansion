@@ -1,0 +1,25 @@
+.bgLight {
+	background-color: #616060;
+}
+.bgDark {
+	background-color: #333333;
+}
+
+.logo {
+	max-height: 70px;
+	margin-top: -15px;
+}
+
+.btn {
+	background: none;
+	border: none;
+	color: #d7d6da;
+	padding-left: 20px;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.toggleThemeBtn {
+	margin-left: 3rem;
+}

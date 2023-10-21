@@ -9,7 +9,7 @@ function Footer() {
             <div className="widget">
               <h3>Silverline Educational Advisory Services</h3>
               <p>
-                We made Silverline consulting exclusively designed for high schoolers, by high schoolers and college students. We understand the unique challenges and aspirations of students like you, and that's why we're here to guide you through the exciting journey of college admissions. Our team, comprised of experienced college students and recent graduates, brings firsthand knowledge and expertise to help you navigate the application process, craft compelling essays, choose the right colleges, and maximize your chances of getting accepted.
+                We made Silverline Educational Advisory Services for high schoolers looking toward their futures. We understand the unique challenges and aspirations of students like you, and that's why we're here to guide you through the exciting journey of college admissions. Our team, comprised of experienced college students and recent graduates, brings firsthand knowledge and expertise to help you navigate the application process, craft compelling essays, choose the right colleges, and maximize your chances of getting accepted.
               </p>
             </div>
           </div>
@@ -42,7 +42,7 @@ function Footer() {
         <hr />
         <div className="row">
           <div className="col-lg-6">
-            <p className="copy">&copy; {new Date().getFullYear()} Silverline Educational Advisory Services | All Rrights Reserved</p>
+            <p className="copy">&copy; {new Date().getFullYear()} Silverline Educational Advisory Services | All Rights Reserved</p>
           </div>
         </div>
       </div>

@@ -1,0 +1,27 @@
+.bg {
+	background-color: #765398;
+}
+
+.header {
+	color: white !important;
+	font-weight: 600;
+}
+
+.icon {
+	font-size: 3.5rem;
+	color: #918ca1 !important;
+}
+
+.num {
+	font-size: 2.5rem;
+	color: white;
+}
+
+.subtitle {
+	font-size: 1.4rem;
+	color: #d6d3cd;
+}
+
+.gap {
+	padding-top: 20px !important;
+}

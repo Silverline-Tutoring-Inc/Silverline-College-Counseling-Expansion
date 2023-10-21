@@ -1,0 +1,70 @@
+.lectureStyle {
+	margin-bottom: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+.imageStyle {
+	width: 150px;
+	height: 200px;
+	border-radius: 50%;
+}
+
+.lectureInfoStyle {
+	flex: 1;
+	margin-left: 30px;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.lecturerNameStyleDark {
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	color: white;
+}
+.lecturerNameStyleLight {
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	color: black;
+}
+
+.designationStyle {
+	color: #4d68e1;
+	text-align: center;
+	margin-bottom: 10px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.overview-style {
+	margin-bottom: 10px;
+}
+
+.bgLight {
+	background-color: #d6d3cd !important;
+}
+
+.bgDark {
+	background-color: #181a1b !important;
+}
+
+.headerDark {
+	color: white !important;
+}
+
+.headerLight {
+	color: black !important;
+}
+
+.textDark {
+	color: white !important;
+}
+
+.textLight {
+	color: black !important;
+}

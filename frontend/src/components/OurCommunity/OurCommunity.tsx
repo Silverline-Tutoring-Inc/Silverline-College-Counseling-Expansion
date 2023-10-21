@@ -7,7 +7,7 @@ import AboutOurCommunity from "./AboutOurCommunity";
 import UpcomingEvents from "./UpcomingEvents";
 import Statistics from "./Statistics";
 import Banner from "./Banner";
-import NavBar from "../NavBar";
+import NavBar from "../NavBar/NavBar";
 
 const OurCommunity: React.FC = () => {
   return (
@@ -17,9 +17,9 @@ const OurCommunity: React.FC = () => {
       <AboutOurCommunity />
       <UpcomingEvents />
       <Statistics />
-      {/* <QuickHelp /> */}
+      <QuickHelp />
       <OurReach />
-      {/* <Opportunities /> */}
+      <Opportunities />
       <Footer />
     </>
   );

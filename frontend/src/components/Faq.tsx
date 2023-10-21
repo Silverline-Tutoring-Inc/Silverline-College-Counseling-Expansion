@@ -68,9 +68,9 @@ const FAQ: React.FC = () => {
         "Most of our tutors are high school senior or college students. However, some of our tutors are teachers or former teachers. Regardless of the tutor, we guarantee that all of our tutors are qualified.",
     },
     {
-      question: "6. Who runs Silverline Tutoring?",
+      question: "6. Who runs Silverline Educational Advisory Services?",
       answer:
-        'Silverline tutoring is run by high schoolers and college students. Our full team can be found <a href="./team">here</a>.',
+        'Silverline Educational Advisory Services is run by high schoolers and college students. Our full team can be found <a href="./team">here</a>.',
     },
   ];
 
