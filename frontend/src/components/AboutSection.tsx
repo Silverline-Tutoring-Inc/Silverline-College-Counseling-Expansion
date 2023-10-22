@@ -1,6 +1,18 @@
 import React from "react";
 import aboutImg from "../images/Home/about_1.webp";
 
+interface About {
+  img: string;
+  alt: string;
+}
+
+const about: Array<About> = [
+  {
+    img: aboutImg,
+    alt: "icon for about section"
+  }
+]
+
 const AboutSection: React.FC = () => {
   return (
     <div className="section section-2">
@@ -34,7 +46,7 @@ const AboutSection: React.FC = () => {
                 data-aos-delay="400"
               >
                 <img
-                  src={aboutImg}
+                  src={about[0].img}
                   alt="A tutoring session between a college student from Carnegie Mellon Univeristy and a highschooler"
                   className="gen-img"
                 />

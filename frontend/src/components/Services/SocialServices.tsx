@@ -2,54 +2,52 @@ import React from "react";
 import shortsImg from "../../images/services/shor1ts.webp";
 
 const SocialServices: React.FC = () => {
-  const containerStyle: React.CSSProperties = {
-    display: "flex",
-    alignItems: "center",
-    backgroundColor: "#181A1B",
-  };
-
-  const textStyle: React.CSSProperties = {
-    flex: "1",
-    padding: "40px",
-    fontSize: "1.1rem",
-    fontWeight: "200",
-    color: "#EAEAEA",
-    marginRight: "50px",
-  };
-
-  const subHeaderStyle: React.CSSProperties = {
-    fontSize: "18px",
-    textTransform: "uppercase",
-    color: "#918CA1",
-    fontWeight: "700",
-  };
-
-  const headerStyle: React.CSSProperties = {
-    fontSize: "46px",
-    fontWeight: "bold",
-    color: "white",
-  };
-
-  const imageStyle: React.CSSProperties = {
-    flex: "1",
-    height: "auto",
-    maxWidth: "40%",
-    marginLeft: "50px",
+  const styles: { [key: string]: React.CSSProperties } = {
+    socialservicesContainer: {
+      display: "flex",
+      alignItems: "center",
+      backgroundColor: "#181A1B",
+    },
+    socialservicesText: {
+      flex: "1",
+      padding: "40px",
+      fontSize: "1.1rem",
+      fontWeight: "200",
+      color: "#EAEAEA",
+      marginRight: "50px",
+    },
+    socialservicesSubHeader: {
+      fontSize: "18px",
+      textTransform: "uppercase",
+      color: "#918CA1",
+      fontWeight: "700",
+    },
+    socialservicesHeader: {
+      fontSize: "46px",
+      fontWeight: "bold",
+      color: "white",
+    },
+    socialservicesImage: {
+      flex: "1",
+      height: "auto",
+      maxWidth: "40%",
+      marginLeft: "50px",
+    },
   };
 
   return (
-    <div style={containerStyle}>
+    <div style={styles.socialservicesContainer}>
       <img
         src={shortsImg}
         alt="Shorts"
-        style={{ ...imageStyle, animation: "fade-up" }}
+        style={{ ...styles.socialservicesImage, animation: "fade-up" }}
         data-aos="fade-up"
       />
-      <div style={{ ...textStyle, animation: "fade-up" }} data-aos="fade-up">
-        <h4 style={subHeaderStyle} data-aos="fade-up">
+      <div style={{ ...styles.socialservicesText, animation: "fade-up" }} data-aos="fade-up">
+        <h4 style={styles.socialservicesSubHeader} data-aos="fade-up">
           SOCIAL SERVICES
         </h4>
-        <h1 style={headerStyle} data-aos="fade-up">
+        <h1 style={styles.socialservicesHeader} data-aos="fade-up">
           Youtube Shorts
         </h1>
         <p data-aos="fade-up">

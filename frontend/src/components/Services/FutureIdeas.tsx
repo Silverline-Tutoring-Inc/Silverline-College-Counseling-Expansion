@@ -1,55 +1,53 @@
 import React from "react";
 
 const FutureIdeas: React.FC = () => {
-  const containerStyle: React.CSSProperties = {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    backgroundColor: "#181A1B",
-    padding: "40px",
-  };
-
-  const textStyle: React.CSSProperties = {
-    textAlign: "center",
-    fontSize: "1.1rem",
-    fontWeight: "200",
-    color: "#EAEAEA",
-    padding: "5px",
-    marginLeft: "40px",
-    marginRight: "40px",
-    marginTop: "50px",
-  };
-
-  const subHeaderStyle: React.CSSProperties = {
-    fontSize: "24px",
-    textTransform: "uppercase",
-    color: "#918CA1",
-    fontWeight: "700",
-  };
-
-  const headerStyle: React.CSSProperties = {
-    fontSize: "42px",
-    fontWeight: "bold",
-    color: "white",
-  };
-
-  const buttonContainerStyle: React.CSSProperties = {
-    display: "flex",
-    justifyContent: "center",
-    marginTop: "30px",
-    gap: "30px",
-    marginBottom: "30px",
+  const styles: { [key: string]: React.CSSProperties } = {
+    futureideasContainer: {
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      backgroundColor: "#181A1B",
+      padding: "40px",
+    },
+    futureideasText: {
+      textAlign: "center",
+      fontSize: "1.1rem",
+      fontWeight: "200",
+      color: "#EAEAEA",
+      padding: "5px",
+      marginLeft: "40px",
+      marginRight: "40px",
+      marginTop: "50px",
+    },
+    futureideasSubHeader: {
+      fontSize: "24px",
+      textTransform: "uppercase",
+      color: "#918CA1",
+      fontWeight: "700",
+    },
+    futureideasHeader: {
+      fontSize: "42px",
+      fontWeight: "bold",
+      color: "white",
+    },
+    futureideasButton: {
+      display: "flex",
+      justifyContent: "center",
+      marginTop: "30px",
+      gap: "30px",
+      marginBottom: "30px",
+    },
   };
 
   return (
-    <div style={containerStyle}>
-      <h2 style={subHeaderStyle} data-aos="fade-up">
+    <div style={styles.futureideasContainer}>
+      <h2 style={styles.futureideasSubHeader} data-aos="fade-up">
         FUTURE IDEAS
       </h2>
-      <h1 style={headerStyle} data-aos="fade-up">
+      <h1 style={styles.futureideasHeader} data-aos="fade-up">
         What's Next?
       </h1>
-      <p style={textStyle} data-aos="fade-up">
+      <p style={styles.futureideasText} data-aos="fade-up">
         Looking forward, we hope to partner with underfunded schools and provide
         resources and tutoring for students who are looking for extra help.
         Along with that, we plan on eventually expanding our focus to developing
@@ -60,7 +58,7 @@ const FutureIdeas: React.FC = () => {
         donating, spreading word in their local districts, or joining the
         organization.
       </p>
-      <div style={buttonContainerStyle}>
+      <div style={styles.futureideasButton}>
         <a
           href="downloads/Press_Release.pdf"
           data-aos="fade-up"

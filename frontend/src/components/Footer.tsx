@@ -7,7 +7,7 @@ function Footer() {
         <div className="row align-self-lg-center">
           <div className="col-lg-3">
             <div className="widget">
-              <h3>Silverline Tutoring</h3>
+              <h3>Silverline Educational Advisory Services</h3>
               <p>
                 We made Silverline consulting exclusively designed for high schoolers, by high schoolers and college students. We understand the unique challenges and aspirations of students like you, and that's why we're here to guide you through the exciting journey of college admissions. Our team, comprised of experienced college students and recent graduates, brings firsthand knowledge and expertise to help you navigate the application process, craft compelling essays, choose the right colleges, and maximize your chances of getting accepted.
               </p>
@@ -31,7 +31,7 @@ function Footer() {
           <div className="col-lg-3">
             <div className="widget">
               <h3>Contact</h3>
-              <address style={{ color: '#AFA99E' }}>Massachusetts, United States</address>
+              <address style={{ color: '#9784a1'}}>Massachusetts, United States</address>
               <ul className="list-unstyled links mb-4">
                 <li><a href="tel://7862959992">(786) 295-9992</a></li>
                 <li><a href="mailto:silverlinetutoring2021@gmail.com">silverlinetutoring2021@gmail.com</a></li>
@@ -42,7 +42,7 @@ function Footer() {
         <hr />
         <div className="row">
           <div className="col-lg-6">
-            <p className="copy">&copy; {new Date().getFullYear()} Silverline Tutoring Services | All Rrights Reserved</p>
+            <p className="copy">&copy; {new Date().getFullYear()} Silverline Educational Advisory Services | All Rrights Reserved</p>
           </div>
         </div>
       </div>
