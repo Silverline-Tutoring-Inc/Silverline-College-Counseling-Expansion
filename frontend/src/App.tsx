@@ -22,41 +22,42 @@ import AboutSection from "./components/AboutSection";
 import ServicesSection from "./components/ServicesSection";
 
 function App(): JSX.Element {
-  useEffect(() => {
-    AOS.init();
-  }, []);
+	useEffect(() => {
+		AOS.init();
+	}, []);
 
-  return (
-    <div className="App">
-      <Router>
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <NavBar pageName="home" />
-                <Hero />
-                <AboutSection />
-                <ServicesSection />
-                <Reach />
-                <Lectures />
-                <Testimonials />
-                <Faq />
-                <Footer />
-              </>
-            }
-          />
-          <Route path="method" element={<Method />} />
-          <Route path="partners" element={<Partners />} />
-          <Route path="reviews" element={<Reviews />} />
-          <Route path="community" element={<OurCommunity />} />
-          <Route path="services" element={<Services />} />
-          <Route path="about" element={<About />} />
-          <Route path="getinvolved" element={<GetInvolved />} />
-        </Routes>
-      </Router>
-    </div>
-  );
+	return (
+		<div className="App">
+			<Router>
+				<Routes>
+					<Route
+						path="/"
+						element={
+							<>
+								<NavBar pageName="home" />
+								<Hero />
+								<AboutSection />
+								<ServicesSection />
+								<Reach />
+								<Lectures />
+								<Testimonials />
+								<Faq />
+								<Footer />
+								{/* just a comment to test out old-test */}
+							</>
+						}
+					/>
+					<Route path="method" element={<Method />} />
+					<Route path="partners" element={<Partners />} />
+					<Route path="reviews" element={<Reviews />} />
+					<Route path="community" element={<OurCommunity />} />
+					<Route path="services" element={<Services />} />
+					<Route path="about" element={<About />} />
+					<Route path="getinvolved" element={<GetInvolved />} />
+				</Routes>
+			</Router>
+		</div>
+	);
 }
 
 export default App;
