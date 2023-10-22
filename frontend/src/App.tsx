@@ -20,6 +20,8 @@ import "aos/dist/aos.css";
 import GetInvolved from "./components/GetInvolved";
 import AboutSection from "./components/AboutSection";
 import ServicesSection from "./components/ServicesSection";
+import Team from "./components/Team/Team";
+import { ThemeProvider } from "./components/ThemeContext";
 
 function App(): JSX.Element {
 	useEffect(() => {

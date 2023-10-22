@@ -1,5 +1,5 @@
 import React from "react";
-import banner from "../images/get-involved/banner.webp";
+// import banner from "../images/get-involved/banner.webp";
 import NavBar from "./NavBar";
 import "../assets/fonts.css";
 import Footer from "./Footer";
@@ -8,7 +8,8 @@ const GetInvolved: React.FC = () => {
   return (
     <div>
       <NavBar pageName="getInvolved" />
-      <div style={{ width: "100%", height: "800px" }}>
+      <h1>   \n\n</h1>
+      {/* <div style={{ width: "100%", height: "800px" }}>
         <img
           src={banner}
           style={{
@@ -18,7 +19,7 @@ const GetInvolved: React.FC = () => {
           }}
           alt="Get Involved Banner"
         />
-      </div>
+      </div> */}
       <div
         style={{
           backgroundColor: "#181A1B",
@@ -43,7 +44,9 @@ const GetInvolved: React.FC = () => {
               fontWeight: 600,
             }}
           >
-            Get Involved Today 
+
+            
+            Join Our Community! 
             <a
               href="add discord link here"
               target="_blank"
@@ -52,8 +55,8 @@ const GetInvolved: React.FC = () => {
                 background: "#7289DA", // Discord color
                 color: "white",
                 padding: "10px 20px",
-                marginLeft: "20px",
-                borderRadius: "5px",
+                marginLeft: "50px",
+                borderRadius: "50px",
                 textDecoration: "none",
               }}
             >

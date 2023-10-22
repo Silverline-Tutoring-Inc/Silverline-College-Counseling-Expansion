@@ -29,7 +29,7 @@ const Reach: React.FC = () => {
       <div
         className="container-fluid p-5 text-center"
         style={{
-          backgroundColor: "#3D4469",
+          backgroundColor: "#765398",
         }}
       >
         <h1 className="text-white my-5">Our Reach</h1>

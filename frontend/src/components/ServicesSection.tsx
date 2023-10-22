@@ -1,10 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import eng from "../images/Home/eng.webp";
-import flexibile from "../images/Home/flexibile.webp";
+import flexible from "../images/Home/flexibile.webp";
 import community from "../images/Home/community.webp";
-import quality from "../images/Home/quality.webp";
+
+interface Service {
+  img: string;
+  alt: string;
+  title: string;
+  desc: string;
+}
+
+const services: Array<Service> = [
+  {
+    img: eng,
+    alt: "icon for versatile",
+    title: "Extracurricular Programs",
+    desc: "We offer specialized extracurricular programs led by students who are top performers in each activity to aid students in their success."
+  },
+  {
+    img: flexible,
+    alt: "icon for flexible tutoring",
+    title: "Educational Advisory",
+    desc: "We offer top of the line resources to help students thrive in their activities."
+  },
+  {
+    img: community,
+    alt: "icon for community",
+    title: "Content",
+    desc: "Silverline has constant educational content to keep students up to date with news, events, and things they need to know revolving around their extracurriculars."
+  }
+]
 
 const ServicesSection: React.FC = () => {
+  const [currentService, setCurrentService] = useState<number>(0);
+
   return (
     <div className="section section-3" style={{ background: "#181A1B" }}>
       <div className="container">
@@ -20,7 +49,7 @@ const ServicesSection: React.FC = () => {
             data-aos-delay="100"
           >
             <div id="destination-controls" className="text-center pt-4">
-              <span className="prev me-3" data-controls="prev">
+              <span className="prev me-3" data-controls="prev" onClick={() => setCurrentService(prev => prev == 0 ? services.length - 1 : prev - 1)}>
                 <svg
                   width="48"
                   height="32"
@@ -36,7 +65,7 @@ const ServicesSection: React.FC = () => {
                   />
                 </svg>
               </span>
-              <span className="next" data-controls="next">
+              <span className="next" data-controls="next" onClick={() => setCurrentService(prev => prev == services.length - 1 ? 0 : prev + 1)}>
                 <svg
                   width="64"
                   height="36"
@@ -69,46 +98,14 @@ const ServicesSection: React.FC = () => {
                 <div className="destination">
                   <div className="thumb">
                     <img
-                      src={eng}
-                      alt="icon for Versatile"
+                      src={services[currentService].img}
+                      alt={services[currentService].alt}
                       className="img-fluid"
                     />
                   </div>
                   <div className="mt-4">
-                    <h3>Extracurricular Programs</h3>
-                    <span className="meta">
-                    We offer specialized extracurricular programs led by students who are top performers in each activity to aid students in their success.
-                    </span>
-                  </div>
-                </div>
-                <div className="destination">
-                  <div className="thumb">
-                    <img
-                      src={flexibile}
-                      alt="icon for flexible tutoring"
-                      className="img-fluid"
-                    />
-                  </div>
-                  <div className="mt-4">
-                    <h3>Educational Advisory</h3>
-                    <span className="meta">
-                    We offer top of the line resources to help students thrive in their activities.                    
-                    </span>
-                  </div>
-                </div>
-                <div className="destination">
-                  <div className="thumb">
-                    <img
-                      src={community}
-                      alt="icon for community"
-                      className="img-fluid"
-                    />
-                  </div>
-                  <div className="mt-4">
-                    <h3>Content</h3>
-                    <span className="meta">
-                    Silverline has constant educational content to keep students up to date with news, events, and things they need to know revolving around their extracurriculars.
-                    </span>
+                    <h3>{services[currentService].title}</h3>
+                    <span className="meta">{services[currentService].desc}</span>
                   </div>
                 </div>
                 <div className="destination">
@@ -121,9 +118,9 @@ const ServicesSection: React.FC = () => {
           <br />
           <br />
           <p className="my-5" data-aos="fade-up" data-aos-delay="300">
-          <a href="./services" className="btn btn-primary text-lg-center">
-          View all services
-          </a>
+            <a href="./services" className="btn btn-primary text-lg-center">
+              View all services
+            </a>
 
           </p>
         </div>
