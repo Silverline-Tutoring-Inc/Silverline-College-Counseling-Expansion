@@ -2,51 +2,49 @@ import React from "react";
 import tutoringImg from "../../images/services/tutoring.webp";
 
 const FoundingIdea: React.FC = () => {
-  const containerStyle: React.CSSProperties = {
-    display: "flex",
-    alignItems: "center",
-    backgroundColor: "#181A1B",
-  };
-
-  const textStyle: React.CSSProperties = {
-    flex: "1",
-    padding: "40px",
-    fontSize: "1.1rem",
-    fontWeight: "200",
-    color: "#EAEAEA",
-    marginTop: "50px",
-    marginLeft: "50px",
-  };
-
-  const subHeaderStyle: React.CSSProperties = {
-    fontSize: "18px",
-    textTransform: "uppercase",
-    color: "#918CA1",
-    fontWeight: "700",
-  };
-
-  const headerStyle: React.CSSProperties = {
-    fontSize: "46px",
-    fontWeight: "bold",
-    color: "white",
-  };
-
-  const imageStyle: React.CSSProperties = {
-    flex: "1",
-    height: "auto",
-    maxWidth: "40%",
-    marginRight: "50px",
-    marginLeft: "50px",
-    marginTop: "50px",
+  const styles: { [key: string]: React.CSSProperties } = {
+    foundingideaContainer: {
+      display: "flex",
+      alignItems: "center",
+      backgroundColor: "#181A1B",
+    },
+    foundingideaText: {
+      flex: "1",
+      padding: "40px",
+      fontSize: "1.1rem",
+      fontWeight: "200",
+      color: "#EAEAEA",
+      marginTop: "50px",
+      marginLeft: "50px",
+    },
+    foundingideaSubHeader: {
+      fontSize: "18px",
+      textTransform: "uppercase",
+      color: "#918CA1",
+      fontWeight: "700",
+    },
+    foundingideaHeader: {
+      fontSize: "46px",
+      fontWeight: "bold",
+      color: "white",
+    },
+    foundingideaImage: {
+      flex: "1",
+      height: "auto",
+      maxWidth: "40%",
+      marginRight: "50px",
+      marginLeft: "50px",
+      marginTop: "50px",
+    },
   };
 
   return (
-    <div style={containerStyle}>
-      <div style={textStyle}>
-        <h4 style={subHeaderStyle} data-aos="fade-up">
+    <div style={styles.foundingideaContainer}>
+      <div style={styles.foundingideaText}>
+        <h4 style={styles.foundingideaSubHeader} data-aos="fade-up">
         Educational Advisory
         </h4>
-        <h1 style={headerStyle} data-aos="fade-up">
+        <h1 style={styles.foundingideaHeader} data-aos="fade-up">
         About Silverline
         </h1>
         <p data-aos="fade-up">
@@ -63,7 +61,7 @@ const FoundingIdea: React.FC = () => {
         This framework has allowed us to serve thousands of students for no charge while maintaining top-notch quality.
         </p>
       </div>
-      <img src={tutoringImg} alt="Tutoring" style={imageStyle} />
+      <img src={tutoringImg} alt="Tutoring" style={styles.foundingideaImage} />
     </div>
   );
 };

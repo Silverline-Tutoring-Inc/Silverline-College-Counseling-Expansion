@@ -31,7 +31,7 @@ function Footer() {
           <div className="col-lg-3">
             <div className="widget">
               <h3>Contact</h3>
-              <address style={{ color: '#AFA99E' }}>Massachusetts, United States</address>
+              <address style={{ color: '#9784a1'}}>Massachusetts, United States</address>
               <ul className="list-unstyled links mb-4">
                 <li><a href="tel://7862959992">(786) 295-9992</a></li>
                 <li><a href="mailto:silverlinetutoring2021@gmail.com">silverlinetutoring2021@gmail.com</a></li>

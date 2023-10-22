@@ -2,49 +2,47 @@ import React from "react";
 import resourcesImg from "../../images/services/resources.webp";
 
 const StudentSupport: React.FC = () => {
-  const containerStyle: React.CSSProperties = {
-    display: "flex",
-    alignItems: "center",
-    backgroundColor: "#181A1B",
-  };
-
-  const textStyle: React.CSSProperties = {
-    flex: "1",
-    padding: "40px",
-    fontSize: "1.1rem",
-    fontWeight: "200",
-    color: "#EAEAEA",
-    marginLeft: "50px",
-  };
-
-  const subHeaderStyle: React.CSSProperties = {
-    fontSize: "18px",
-    textTransform: "uppercase",
-    color: "#918CA1",
-    fontWeight: "700",
-  };
-
-  const headerStyle: React.CSSProperties = {
-    fontSize: "46px",
-    fontWeight: "bold",
-    color: "white",
-  };
-
-  const imageStyle: React.CSSProperties = {
-    flex: "1",
-    height: "auto",
-    maxWidth: "40%",
-    marginRight: "50px",
-    marginLeft: "50px",
+  const styles: { [key: string]: React.CSSProperties } = {
+    studentsupportContainer: {
+      display: "flex",
+      alignItems: "center",
+      backgroundColor: "#181A1B",
+    },
+    studentsupportText: {
+      flex: "1",
+      padding: "40px",
+      fontSize: "1.1rem",
+      fontWeight: "200",
+      color: "#EAEAEA",
+      marginLeft: "50px",
+    },
+    studentsupportSubHeader: {
+      fontSize: "18px",
+      textTransform: "uppercase",
+      color: "#918CA1",
+      fontWeight: "700",
+    },
+    studentsupportHeader: {
+      fontSize: "46px",
+      fontWeight: "bold",
+      color: "white",
+    },
+    studentsupportImage: {
+      flex: "1",
+      height: "auto",
+      maxWidth: "40%",
+      marginRight: "50px",
+      marginLeft: "50px",
+    },
   };
 
   return (
-    <div style={containerStyle}>
-      <div style={textStyle}>
-        <h4 style={subHeaderStyle} data-aos="fade-up">
+    <div style={styles.studentsupportContainer}>
+      <div style={styles.studentsupportText}>
+        <h4 style={styles.studentsupportSubHeader} data-aos="fade-up">
         Extracurricular Programs
         </h4>
-        <h1 style={headerStyle} data-aos="fade-up">
+        <h1 style={styles.studentsupportHeader} data-aos="fade-up">
         Our Mission
         </h1>
         <p data-aos="fade-up">
@@ -55,7 +53,7 @@ const StudentSupport: React.FC = () => {
         without using their hard-earned money. As Silverline grew, we listened to our members and shifted our focus.
          Starting in the summer of 2023, Silverline started focusing on extracurricular activities. We aim to help each 
          and every student who comes to us the best we can with whatever resources we have to give.
-         
+      
       {/* <div>
   <ul>
     <li>Debate</li>
@@ -73,7 +71,7 @@ const StudentSupport: React.FC = () => {
       <img
         src={resourcesImg}
         alt="Resources"
-        style={{ ...imageStyle, animation: "fade-up" }}
+        style={{ ...styles.studentsupportImage, animation: "fade-up" }}
         data-aos="fade-up"
       />
     </div>

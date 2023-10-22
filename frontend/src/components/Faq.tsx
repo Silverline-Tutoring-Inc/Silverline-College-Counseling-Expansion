@@ -6,42 +6,39 @@ interface QuestionAnswer {
 }
 
 const FAQ: React.FC = () => {
-  const containerStyle: React.CSSProperties = {
-    display: "flex",
-    alignItems: "center",
-    backgroundColor: "#181A1B",
-  };
-
-  const textStyle: React.CSSProperties = {
-    flex: "1",
-    padding: "40px",
-    fontSize: "1.1rem",
-    fontWeight: "200",
-    color: "#EAEAEA",
-    marginRight: "50px",
-  };
-
-  const subHeaderStyle: React.CSSProperties = {
-    fontSize: "18px",
-    textTransform: "uppercase",
-    color: "#918CA1",
-    fontWeight: "700",
-    marginBottom: "20px",
-  };
-
-  const headerStyle: React.CSSProperties = {
-    fontSize: "46px",
-    fontWeight: "bold",
-    color: "white",
-    marginBottom: "30px",
-  };
-
-  const questionStyle: React.CSSProperties = {
-    marginBottom: "15px",
-  };
-
-  const answerStyle: React.CSSProperties = {
-    marginBottom: "30px",
+  const styles: { [key: string]: React.CSSProperties } = {
+    faqContainer: {
+      display: "flex",
+      alignItems: "center",
+      backgroundColor: "#181A1B",
+    },
+    faqText: {
+      flex: "1",
+      padding: "40px",
+      fontSize: "1.1rem",
+      fontWeight: "200",
+      color: "#EAEAEA",
+      marginRight: "50px",
+    },
+    faqSubHeader: {
+      fontSize: "18px",
+      textTransform: "uppercase",
+      color: "#918CA1",
+      fontWeight: "700",
+      marginBottom: "20px",
+    },
+    faqHeader: {
+      fontSize: "46px",
+      fontWeight: "bold",
+      color: "white",
+      marginBottom: "30px",
+    },
+    faqQuestionStyle: {
+      marginBottom: "15px",
+    },
+    faqAnswerStyle: {
+      marginBottom: "30px",
+    },
   };
 
   const faqs: QuestionAnswer[] = [
@@ -78,16 +75,16 @@ const FAQ: React.FC = () => {
   ];
 
   return (
-    <div style={containerStyle}>
-      <div className="container" style={textStyle}>
-        <h1 className="title" data-aos="fade-up" style={headerStyle}>
+    <div style={styles.faqContainer}>
+      <div className="container" style={styles.faqText}>
+        <h1 className="title" data-aos="fade-up" style={styles.faqHeader}>
           Frequently Asked Questions
         </h1>
         <h2
           className="sub-heading"
           data-aos="fade-up"
           data-aos-delay="100"
-          style={subHeaderStyle}
+          style={styles.faqSubHeader}
         >
           {/* Add sub-heading text here if necessary */}
         </h2>
@@ -97,13 +94,13 @@ const FAQ: React.FC = () => {
             data-aos="fade-up"
             data-aos-delay={200 * (index + 1)}
           >
-            <h3 className="question" style={questionStyle}>
+            <h3 className="question" style={styles.faqQuestionStyle}>
               {faq.question}
             </h3>
             <p
               className="answer"
               data-testid="faq-answer"
-              style={answerStyle}
+              style={styles.faqAnswerStyle}
               dangerouslySetInnerHTML={{ __html: faq.answer }}
             ></p>
           </div>
