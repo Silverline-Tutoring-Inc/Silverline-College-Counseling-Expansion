@@ -22,7 +22,6 @@ const SilverlineSpecialties: React.FC = () => {
 			fontSize: "1.1rem",
 			fontWeight: "bold",
 		},
-    
 	};
 
   const specialties: Specialty[] = [
