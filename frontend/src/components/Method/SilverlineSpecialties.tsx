@@ -8,21 +8,22 @@ interface Specialty {
 }
 
 const SilverlineSpecialties: React.FC = () => {
-  const containerStyle: React.CSSProperties = {
-    color: "#D6D3CD",
-    position: "relative",
-    fontFamily: "DM Sans, sans-serif",
-  };
-
-  const titleStyle: React.CSSProperties = {
-    fontSize: "2.5rem",
-    fontWeight: "bold",
-  };
-
-  const bodyStyle: React.CSSProperties = {
-    fontSize: "1.1rem",
-    fontWeight: "bold",
-  };
+  const styles: { [key: string]: React.CSSProperties } = {
+		specialtiesContainerStyle: {
+			color: "#D6D3CD",
+			position: "relative",
+			fontFamily: "DM Sans, sans-serif",
+		},
+		specialitiesTitleStyle: {
+			fontSize: "2.5rem",
+			fontWeight: "bold",
+		},
+		specialtiesBodyStyle: {
+			fontSize: "1.1rem",
+			fontWeight: "bold",
+		},
+    
+	};
 
   const specialties: Specialty[] = [
     {
@@ -78,12 +79,12 @@ const SilverlineSpecialties: React.FC = () => {
   ];
 
   return (
-    <div className="container" style={containerStyle}>
-      <h1 className="pt-3" style={titleStyle}>
+    <div className="container" style={styles.specialtiesContainerStyle}>
+      <h1 className="pt-3" style={styles.specialitiesTitleStyle}>
         Silverline Specialities
       </h1>
       <br />
-      <p style={bodyStyle}>
+      <p style={styles.specialtiesBodyStyle}>
         Several organizations provide similar services, so why us? Silverline
         Tutoring is an exceptional option because of our diversity of topics as
         well as highly-rated tutors. Perhaps most importantly, our free tutoring
