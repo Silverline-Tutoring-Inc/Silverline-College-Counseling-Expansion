@@ -2,25 +2,27 @@ import React from "react";
 import CollapseBtn from "./CollapseBtn";
 
 const OurReach: React.FC = () => {
-  const bodyStyle: React.CSSProperties = {
-    fontSize: "1.1rem",
-    fontWeight: "bold",
-    color: "#D6D3CD",
-  };
-  const titleStyle: React.CSSProperties = {
-    fontSize: "2.5rem",
-    fontWeight: "bold",
-    color: "#918CA1",
-  };
+  const styles: { [key: string]: React.CSSProperties } = {
+		reachBodyStyle: {
+			fontSize: "1.1rem",
+      fontWeight: "bold",
+      color: "#D6D3CD",
+		},
+		reachTitleStyle: {
+			fontSize: "2.5rem",
+      fontWeight: "bold",
+      color: "#918CA1",
+		},
+	};
 
   return (
     <div style={{ backgroundColor: "#181A1B", padding: "7rem" }}>
       <div className="container">
-        <h1 style={titleStyle} data-aos="fade-up">
+        <h1 style={styles.reachTitleStyle} data-aos="fade-up">
           Our Reach
         </h1>
         <h2 className="heading mb-3" data-aos="fade-up" data-aos-delay="100"></h2>
-        <p style={bodyStyle} data-aos="fade-up" data-aos-delay="200">
+        <p style={styles.reachBodyStyle} data-aos="fade-up" data-aos-delay="200">
           In our years of service, our organization has expanded into numerous continents
           and continues to grow daily:
         </p>
