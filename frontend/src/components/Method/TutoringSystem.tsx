@@ -2,29 +2,29 @@ import React, { CSSProperties } from "react";
 import { Link } from "react-router-dom";
 
 const TutoringSystem: React.FC = () => {
-	const containerStyle: CSSProperties = {
-		color: "#D6D3CD",
-		position: "relative",
-		fontFamily: "DM Sans, sans-serif",
-	};
-
-	const titleStyle: CSSProperties = {
-		fontSize: "2.5rem",
-		fontWeight: "bold",
-	};
-
-	const bodyStyle: CSSProperties = {
-		fontSize: "1.1rem",
-		fontWeight: "bold",
+	const styles: { [key: string]: React.CSSProperties } = {
+		tutoringsystemContainerStyle: {
+			color: "#D6D3CD",
+			position: "relative",
+			fontFamily: "DM Sans, sans-serif",
+		},
+		tutoringsystemTitleStyle: {
+			fontSize: "2.5rem",
+			fontWeight: "bold",
+		},
+		tutoringsystemBodyStyle: {
+			fontSize: "1.1rem",
+			fontWeight: "bold",
+		},
 	};
 
 	return (
-		<div className="container" style={containerStyle}>
-			<h1 className="pt-3" style={titleStyle}>
+		<div className="container" style={styles.tutoringsystemContainerStyle}>
+			<h1 className="pt-3" style={styles.tutoringsystemTitleStyle}>
 				Our Tutoring System
 			</h1>
 			<br></br>
-			<p style={bodyStyle}>
+			<p style={styles.tutoringsystemBodyStyle}>
 				Our tutoring system is reliant on high schoolers and
 				college-level students. But how does our system actually
 				function? The first step in our system is signing up. Tutors and

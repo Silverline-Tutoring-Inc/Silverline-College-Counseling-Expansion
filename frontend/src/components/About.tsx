@@ -9,11 +9,13 @@ interface HeadingStyle {
 }
 
 const About: React.FC = () => {
-  const headingStyle: HeadingStyle = {
-    color: "#918CA1",
-    fontFamily: "Work Sans, sans-serif",
-    fontWeight: "800",
-  };
+  const styles: { [key: string]: React.CSSProperties } = {
+		aboutHeadingStyle: {
+			color: "#918CA1",
+      fontFamily: "Work Sans, sans-serif",
+      fontWeight: "800",
+		},
+	};
 
   return (
     <>
@@ -35,7 +37,7 @@ const About: React.FC = () => {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-12">
-              <h1 style={headingStyle} data-aos="fade-up">
+              <h1 style={styles.aboutHeadingStyle} data-aos="fade-up">
                 About Silverline
               </h1>
               <h2
@@ -63,7 +65,7 @@ const About: React.FC = () => {
                 cost of nothing while still maintaining quality.
               </p>
 
-              <h1 style={headingStyle} data-aos="fade-up">
+              <h1 style={styles.aboutHeadingStyle} data-aos="fade-up">
                 Our Goals
               </h1>
               <h2
@@ -77,7 +79,7 @@ const About: React.FC = () => {
 
               </p>
 
-              <h1 style={headingStyle} data-aos="fade-up">
+              <h1 style={styles.aboutHeadingStyle} data-aos="fade-up">
                 Our Target Group
               </h1>
               <h2

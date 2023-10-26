@@ -13,22 +13,26 @@ const UpcomingEvents: React.FC = () => {
     return () => {
       document.body.removeChild(tockify);
     };
-  }, []);
+  }, []
+  );
 
-  const bodyStyle = {
-    fontSize: "1.1rem",
-    fontWeight: "bold",
-    color: "#D6D3CD",
-  };
-  const titleStyle = {
-    fontSize: "2.5rem",
-    fontWeight: "bold",
-    color: "#918CA1",
-  };
+  const styles: { [key: string]: React.CSSProperties } = {
+		eventsBodyStyle: {
+			fontSize: "1.1rem",
+      fontWeight: "bold",
+      color: "#D6D3CD",
+		},
+		eventsTitleStyle: {
+			fontSize: "2.5rem",
+      fontWeight: "bold",
+      color: "#918CA1",
+		},    
+	};
+
   return (
     <div style={{ backgroundColor: "#1E2022", padding: "7rem" }}>
       <div className="container">
-        <h1 style={titleStyle} data-aos="fade-up">
+        <h1 style={styles.eventsTitleStyle} data-aos="fade-up">
           Upcoming Events
         </h1>
         <br />

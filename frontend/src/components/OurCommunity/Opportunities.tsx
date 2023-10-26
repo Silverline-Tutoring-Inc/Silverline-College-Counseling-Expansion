@@ -1,27 +1,30 @@
 import React from "react";
 
 const Opportunities: React.FC = () => {
-  const bodyStyle: React.CSSProperties = {
-    fontSize: "1.1rem",
-    fontWeight: "bold",
-    color: "#D6D3CD",
-  };
-  const titleStyle: React.CSSProperties = {
-    fontSize: "2.5rem",
-    fontWeight: "bold",
-    color: "#918CA1",
-  };
+  const styles: { [key: string]: React.CSSProperties } = {
+		opportunitiesBodyStyle: {
+			fontSize: "1.1rem",
+      fontWeight: "bold",
+      color: "#D6D3CD",
+		},
+		opportunitiesTitleStyle: {
+			fontSize: "2.5rem",
+      fontWeight: "bold",
+      color: "#918CA1",
+		},
+	};
+
   return (
     <div style={{ backgroundColor: "#1E2022", padding: "7rem" }}>
       <div className="container">
-        <h1 style={titleStyle} data-aos="fade-up">
+        <h1 style={styles.opportunitiesTitleStyle} data-aos="fade-up">
           Opportunities
         </h1>
         <h2 className="heading mb-3" data-aos="fade-up" data-aos-delay="100" />
 
         <p
           className="my-0"
-          style={bodyStyle}
+          style={styles.opportunitiesBodyStyle}
           data-aos="fade-up"
           data-aos-delay="200"
         >
