@@ -9,10 +9,12 @@ interface HeadingStyle {
 }
 
 const About: React.FC = () => {
-	const headingStyle: HeadingStyle = {
-		color: "#918CA1",
-		fontFamily: "Work Sans, sans-serif",
-		fontWeight: "800",
+  const styles: { [key: string]: React.CSSProperties } = {
+		aboutHeadingStyle: {
+			color: "#918CA1",
+      fontFamily: "Work Sans, sans-serif",
+      fontWeight: "800",
+		},
 	};
 
 	return (
@@ -31,18 +33,18 @@ const About: React.FC = () => {
 				</div>
 			</div>
 
-			<div className="section overlay">
-				<div className="container">
-					<div className="row align-items-center">
-						<div className="col-lg-12">
-							<h1 style={headingStyle} data-aos="fade-up">
-								About Silverline
-							</h1>
-							<h2
-								className="heading mb-3"
-								data-aos="fade-up"
-								data-aos-delay="100"
-							></h2>
+      <div className="section overlay">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-12">
+              <h1 style={styles.aboutHeadingStyle} data-aos="fade-up">
+                About Silverline
+              </h1>
+              <h2
+                className="heading mb-3"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              ></h2>
 
 							<p data-aos="fade-up" data-aos-delay="200">
 								Silverline Tutoring is an educational 501(c)(3)
@@ -86,17 +88,14 @@ const About: React.FC = () => {
 								data-aos-delay="100"
 							></h2>
 
-							<p data-aos="fade-up" data-aos-delay="200">
-								At Silverline we are passionate about equal
-								opportunity within education, extracurriculars,
-								and admissions. We provide students with a
-								variety of resources - ranging from robotics to
-								Science Olympiad assistance - in order to
-								amplify and enrich their experiences. We want to
-								set our students up for success while building a
-								strong community that facilitates opportunities
-								for everyone involved.
-							</p>
+              <h1 style={styles.aboutHeadingStyle} data-aos="fade-up">
+                Our Goals
+              </h1>
+              <h2
+                className="heading mb-3"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              ></h2>
 
 							<h1 style={headingStyle} data-aos="fade-up">
 								Our Target Group
@@ -111,9 +110,14 @@ const About: React.FC = () => {
 								Didnt get text for this
 							</p>
 
-							<p data-aos="fade-up" data-aos-delay="300">
-								Didnt get text for this
-							</p>
+              <h1 style={styles.aboutHeadingStyle} data-aos="fade-up">
+                Our Target Group
+              </h1>
+              <h2
+                className="heading mb-3"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              ></h2>
 
 							<p data-aos="fade-up" data-aos-delay="400">
 								Didnt get text for this
