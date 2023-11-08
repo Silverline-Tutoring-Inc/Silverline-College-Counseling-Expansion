@@ -24,7 +24,7 @@ describe("FAQ component", () => {
       screen.getByText("5. What is the experience of the tutors"),
     ).toBeInTheDocument();
     expect(
-      screen.getByText("6. Who runs Silverline Tutoring"),
+      screen.getByText("6. Who runs Silverline Educational Advisory Services"),
     ).toBeInTheDocument();
 
     // Verify the presence of the answers

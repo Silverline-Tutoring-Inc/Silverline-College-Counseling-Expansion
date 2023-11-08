@@ -10,7 +10,7 @@ describe("Reviews Page", () => {
     expect(screen.getByText("Reviews")).toBeInTheDocument();
     expect(
       screen.getByText(
-        "Hear what others have to say about Silverline Tutoring.",
+        "Hear what others have to say about Silverline Educational Advisory Services.",
       ),
     ).toBeInTheDocument();
     expect(screen.getByTestId("reviews-container")).toBeInTheDocument();

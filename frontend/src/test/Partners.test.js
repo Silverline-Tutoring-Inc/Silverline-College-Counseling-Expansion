@@ -55,7 +55,7 @@ test("Checks that the components are rendered correctly", () => {
   // Checks partners description
   const partnersDesc = [
     screen.getByText(
-      "The Pond is an all in one service for students applying to college. The Pond provides student with a personalized program for college entrance so they always know what to do next and how to do it. The Pond utilizes AI software in order to help student with the college process. To date, over 60,000 students have used the Pond to develop college lists, and they also have over 15,000 active users of the platform. The Pond and Silverline Tutoring work together to help students from all different backgrounds.",
+      "The Pond is an all in one service for students applying to college. The Pond provides student with a personalized program for college entrance so they always know what to do next and how to do it. The Pond utilizes AI software in order to help student with the college process. To date, over 60,000 students have used the Pond to develop college lists, and they also have over 15,000 active users of the platform. The Pond and Silverline Educational Advisory Services work together to help students from all different backgrounds.",
     ),
 
     screen.getByText(
@@ -79,7 +79,7 @@ test("Checks that the components are rendered correctly", () => {
     ),
 
     screen.getByText(
-      "Panda Express is an American fast food restaurant chain that serves American Chinese cuisine. With over 2,200 locations, it is the largest Asian-segment restaurant chain in the United States. They are working with Silverline Tutoring to help fundraise and donate resources to children in India and Ethopia.",
+      "Panda Express is an American fast food restaurant chain that serves American Chinese cuisine. With over 2,200 locations, it is the largest Asian-segment restaurant chain in the United States. They are working with Silverline Educational Advisory Services to help fundraise and donate resources to children in India and Ethopia.",
     ),
 
     screen.getByText(
@@ -87,7 +87,7 @@ test("Checks that the components are rendered correctly", () => {
     ),
 
     screen.getByText(
-      "Chipotle Mexican Grill, Inc. is an American chain of fast casual restaurants in that operates in over 5 different countries with nearly 3,000 locations. In September of 2022, they worked with Silverline Tutoring to help fundraise money. This fundraiser allowed Silverline to become one step closer to solving the educational divide. Money was redistributed to Silverline heads in Africa in order donate to those in need.",
+      "Chipotle Mexican Grill, Inc. is an American chain of fast casual restaurants in that operates in over 5 different countries with nearly 3,000 locations. In September of 2022, they worked with Silverline Educational Advisory Services to help fundraise money. This fundraiser allowed Silverline to become one step closer to solving the educational divide. Money was redistributed to Silverline heads in Africa in order donate to those in need.",
     ),
 
     screen.getByText(
@@ -95,7 +95,7 @@ test("Checks that the components are rendered correctly", () => {
     ),
 
     screen.getByText(
-      "Silverline Tutoring is partnered with Chelmsford High School. Chelmsford High School is a high school located in Chelmsford, Massachusetts and serves nearly 1,500 students. Silverline Tutoring works to provide students with help for all academic classes and provide volunteer opportunities to students.",
+      "Silverline Educational Advisory Services is partnered with Chelmsford High School. Chelmsford High School is a high school located in Chelmsford, Massachusetts and serves nearly 1,500 students. Silverline Educational Advisory Services works to provide students with help for all academic classes and provide volunteer opportunities to students.",
     ),
   ];
   partnersDesc.map((e) => expect(e).toBeInTheDocument());

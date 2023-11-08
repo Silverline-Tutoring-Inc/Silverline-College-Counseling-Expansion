@@ -28,12 +28,12 @@ const SilverlineSpecialties: React.FC = () => {
     {
       color: "#FF5722",
       title: "Math",
-      desc: "Silverline Tutoring students have the chance to learn several fundamental math concepts. Usually, depending on the student's needs, we can teach any math level from elementary school math all the way up to college level math. Our diversity among tutors allows us to offer coverage in areas such as linear algebra and applied calculus.",
+      desc: "Silverline Educational Advisory Services students have the chance to learn several fundamental math concepts. Usually, depending on the student's needs, we can teach any math level from elementary school math all the way up to college level math. Our diversity among tutors allows us to offer coverage in areas such as linear algebra and applied calculus.",
     },
     {
       color: "#2196F3",
       title: "Science",
-      desc: "From biology to AP physics to chemistry, Silverline Tutoring has several tutors specializing in science. We give students an in-depth understanding of any topics presented. Our science department has no limits with some of our tutors actively studying physics in universities such as Carnegie Mellon.",
+      desc: "From biology to AP physics to chemistry, Silverline Educational Advisory Services has several tutors specializing in science. We give students an in-depth understanding of any topics presented. Our science department has no limits with some of our tutors actively studying physics in universities such as Carnegie Mellon.",
     },
     {
       color: "#4CAF50",
