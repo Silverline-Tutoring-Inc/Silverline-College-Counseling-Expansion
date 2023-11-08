@@ -42,7 +42,7 @@ function Footer() {
         <hr />
         <div className="row">
           <div className="col-lg-6">
-            <p className="copy">&copy; {new Date().getFullYear()} Silverline Educational Advisory Services Services | All Rrights Reserved</p>
+            <p className="copy">&copy; {new Date().getFullYear()} Silverline Educational Advisory Services Services | All Rights Reserved</p>
           </div>
         </div>
       </div>

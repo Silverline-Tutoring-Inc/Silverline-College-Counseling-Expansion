@@ -47,7 +47,7 @@ describe("FAQ component", () => {
       "Most of our tutors are high school senior or college students. However, some of our tutors are teachers or former teachers. Regardless of the tutor, we guaruntee that all of our tutors are qualified.",
     );
     expect(answerTexts).toContain(
-      "Silverline tutoring is run by highschoolers and college students. Our full team can be found here.",
+      "Silverline Educational Advisory Services is run by highschoolers and college students. Our full team can be found here.",
     );
   });
 });

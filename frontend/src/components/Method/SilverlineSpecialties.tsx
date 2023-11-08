@@ -68,7 +68,7 @@ const SilverlineSpecialties: React.FC = () => {
     {
       color: "#C25DA5",
       title: "SAT",
-      desc: "From the specific sections of the SAT to tips and tricks on how to do well on test day, Silverline tutoring students learn a variety of skills to help them increase their score on the SAT. These lessons typically take place over the course of a 5-week period.",
+      desc: "From the specific sections of the SAT to tips and tricks on how to do well on test day, Silverline Educational Advisory Services students learn a variety of skills to help them increase their score on the SAT. These lessons typically take place over the course of a 5-week period.",
     },
     {
       color: "#AD2628",

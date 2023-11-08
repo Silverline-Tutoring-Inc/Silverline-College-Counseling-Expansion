@@ -73,7 +73,7 @@ const FAQ: React.FC = () => {
     {
       question: "6. Who runs Silverline Educational Advisory Services?",
       answer:
-        'Silverline tutoring is run by high schoolers and college students. Our full team can be found <a href="./team">here</a>.',
+        'Silverline Educational Advisory Services is run by high schoolers and college students. Our full team can be found <a href="./team">here</a>.',
     },
   ];
 
