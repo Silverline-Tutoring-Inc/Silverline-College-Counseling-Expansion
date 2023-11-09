@@ -82,51 +82,53 @@ const Testimonials: React.FC = () => {
 				theme === "dark" ? styles.outerDivDark : styles.outerDivLight
 			}
 		>
-			<div className={styles.innerDiv}>
-				<p className={styles.subHeader}>Satisfied Students</p>
-				<h1
-					className={
-						theme === "dark"
-							? styles.titleHeaderDark
-							: styles.titleHeaderLight
-					}
-				>
-					Testimonials
-				</h1>
-				<div className={styles.overflowContainer}>
-					<div
-						className={styles.dynamicSlider}
-						// cannot avoid this style
-						style={
-							{
-								"--content-length": content.length,
-								"--val": val,
-							} as any
+			<div className={styles.center}>
+				<div className={styles.innerDiv}>
+					<p className={styles.subHeader}>Satisfied Students</p>
+					<h1
+						className={
+							theme === "dark"
+								? styles.titleHeaderDark
+								: styles.titleHeaderLight
 						}
 					>
+						Testimonials
+					</h1>
+					<div className={styles.overflowContainer}>
+						<div
+							className={styles.dynamicSlider}
+							// cannot avoid this style
+							style={
+								{
+									"--content-length": content.length,
+									"--val": val,
+								} as any
+							}
+						>
+							{content.map((c, idx) => (
+								<TestimonialItem {...c} key={idx} />
+							))}
+						</div>
+					</div>
+					<div className={styles.selectorContainer}>
 						{content.map((c, idx) => (
-							<TestimonialItem {...c} key={idx} />
+							<div
+								key={idx}
+								onClick={() => setVal(idx)}
+								className={`${
+									theme === "dark"
+										? styles.roundButtonDark
+										: styles.roundButtonLight
+								} ${
+									idx === val
+										? theme === "dark"
+											? styles.activeButtonDark
+											: styles.activeButtonLight
+										: styles.inactiveButton
+								}`}
+							/>
 						))}
 					</div>
-				</div>
-				<div className={styles.selectorContainer}>
-					{content.map((c, idx) => (
-						<div
-							key={idx}
-							onClick={() => setVal(idx)}
-							className={`${
-								theme === "dark"
-									? styles.roundButtonDark
-									: styles.roundButtonLight
-							} ${
-								idx === val
-									? theme === "dark"
-										? styles.activeButtonDark
-										: styles.activeButtonLight
-									: styles.inactiveButton
-							}`}
-						/>
-					))}
 				</div>
 			</div>
 		</div>
