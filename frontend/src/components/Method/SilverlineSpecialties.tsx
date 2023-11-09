@@ -85,7 +85,7 @@ const SilverlineSpecialties: React.FC = () => {
       <br />
       <p style={styles.specialtiesBodyStyle}>
         Several organizations provide similar services, so why us? Silverline
-        Tutoring is an exceptional option because of our diversity of topics as
+        Educational Advisory Services is an exceptional option because of our diversity of topics as
         well as highly-rated tutors. Perhaps most importantly, our free tutoring
         comes with no tradeoff in quality. We serve as an all-in-one stop for
         educational needs. Our use of online platforms provides flexibility that

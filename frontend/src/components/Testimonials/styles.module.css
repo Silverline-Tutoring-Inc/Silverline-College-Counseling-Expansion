@@ -6,6 +6,14 @@
 	width: 100%;
 }
 
+.center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
+
 .outerDivDark {
 	background-color: #181a1b;
 	width: 100%;

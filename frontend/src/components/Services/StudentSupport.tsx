@@ -51,8 +51,8 @@ const StudentSupport: React.FC = () => {
         that give you a variety of ways to learn or have to use materials that don't work for everyone. 
         We started off by connecting students to qualified tutors with the hopes of giving them the resources they desired 
         without using their hard-earned money. As Silverline grew, we listened to our members and shifted our focus.
-         Starting in the summer of 2023, Silverline started focusing on extracurricular activities. We aim to help each 
-         and every student who comes to us the best we can with whatever resources we have to give.
+          Starting in the summer of 2023, Silverline started focusing on extracurricular activities. We aim to help each 
+          and every student who comes to us the best we can with whatever resources we have to give.
       
       {/* <div>
   <ul>
