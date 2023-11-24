@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import Partners from "../components/Partners/Partners";
+import Partners from "../components/Partners";
 
 test("Checks that the partner container is rendered and not empty", () => {
   render(<Partners />);

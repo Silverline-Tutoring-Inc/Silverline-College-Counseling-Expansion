@@ -2,6 +2,10 @@ import React from "react";
 
 const AboutOurCommunity: React.FC = () => {
 	const styles: { [key: string]: React.CSSProperties } = {
+		communityStyle: {
+			backgroundColor: "#181A1B",
+			padding: "7rem",
+		},
 		communityBodyStyle: {
 			fontSize: "1.1rem",
 			fontWeight: "bold",
@@ -15,7 +19,7 @@ const AboutOurCommunity: React.FC = () => {
 	};
 	
 	return (
-		<div style={{ backgroundColor: "#1E2022", padding: "7rem" }}>
+		<div style={styles.communityStyle}>
 			<div className="container">
 				<h1 style={styles.communityTitleStyle} data-aos="fade-up">
 					About Our Community

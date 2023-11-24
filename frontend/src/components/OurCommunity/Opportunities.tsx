@@ -2,6 +2,10 @@ import React from "react";
 
 const Opportunities: React.FC = () => {
   const styles: { [key: string]: React.CSSProperties } = {
+    opportunitiesStyle: {
+			backgroundColor: "#181A1B",
+			padding: "7rem",
+		},
 		opportunitiesBodyStyle: {
 			fontSize: "1.1rem",
       fontWeight: "bold",
@@ -15,7 +19,7 @@ const Opportunities: React.FC = () => {
 	};
 
   return (
-    <div style={{ backgroundColor: "#1E2022", padding: "7rem" }}>
+    <div style={styles.opportunitiesStyle}>
       <div className="container">
         <h1 style={styles.opportunitiesTitleStyle} data-aos="fade-up">
           Opportunities

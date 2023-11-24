@@ -1,4 +1,5 @@
 import React from "react";
+import { useTheme } from "./ThemeContext";
 
 interface QuestionAnswer {
   question: string;
@@ -6,38 +7,76 @@ interface QuestionAnswer {
 }
 
 const FAQ: React.FC = () => {
+  const { theme, toggleTheme } = useTheme();
+
   const styles: { [key: string]: React.CSSProperties } = {
-    faqContainer: {
+    faqDarkContainer: {
       display: "flex",
       alignItems: "center",
       backgroundColor: "#181A1B",
     },
-    faqText: {
+    faqLightContainer: {
+      display: "flex",
+      alignItems: "center",
+      backgroundColor: "#D6D3CD",
+    },
+    faqDarkText: {
       flex: "1",
       padding: "40px",
       fontSize: "1.1rem",
       fontWeight: "200",
-      color: "#EAEAEA",
+      color: "#D6D3CD",
       marginRight: "50px",
     },
-    faqSubHeader: {
+    faqLightText: {
+      flex: "1",
+      padding: "40px",
+      fontSize: "1.1rem",
+      fontWeight: "200",
+      color: "#181A1B",
+      marginRight: "50px",
+    },
+    faqDarkSubHeader: {
       fontSize: "18px",
       textTransform: "uppercase",
-      color: "#918CA1",
+      color: "#D6D3CD",
       fontWeight: "700",
       marginBottom: "20px",
     },
-    faqHeader: {
+    faqLightSubHeader: {
+      fontSize: "18px",
+      textTransform: "uppercase",
+      color: "#181A1B",
+      fontWeight: "700",
+      marginBottom: "20px",
+    },
+    faqDarkHeader: {
       fontSize: "46px",
       fontWeight: "bold",
       color: "white",
       marginBottom: "30px",
     },
-    faqQuestionStyle: {
-      marginBottom: "15px",
-    },
-    faqAnswerStyle: {
+    faqLightHeader: {
+      fontSize: "46px",
+      fontWeight: "bold",
+      color: "black",
       marginBottom: "30px",
+    },
+    faqDarkQuestionStyle: {
+      marginBottom: "15px",
+      color: "white",
+    },
+    faqLightQuestionStyle: {
+      marginBottom: "15px",
+      color: "black",
+    },
+    faqDarkAnswerStyle: {
+      marginBottom: "30px",
+      color: "#D6D3CD",
+    },
+    faqLightAnswerStyle: {
+      marginBottom: "30px",
+      color: "#181A1B",
     },
   };
 
@@ -75,16 +114,19 @@ const FAQ: React.FC = () => {
   ];
 
   return (
-    <div style={styles.faqContainer}>
-      <div className="container" style={styles.faqText}>
-        <h1 className="title" data-aos="fade-up" style={styles.faqHeader}>
+    <div className={`background ${
+      theme === "dark" ? styles.faqDarkContainer : styles.faqLightContainer
+    }`}>
+      <div className="container" 
+      style={theme === "dark" ? styles.faqDarkText : styles.faqLightText}>
+        <h1 className="title" data-aos="fade-up" style={theme === "dark" ? styles.faqDarkHeader : styles.faqLightHeader}>
           Frequently Asked Questions
         </h1>
         <h2
           className="sub-heading"
           data-aos="fade-up"
           data-aos-delay="100"
-          style={styles.faqSubHeader}
+          style={theme === "dark" ? styles.faqDarkSubHeader : styles.faqLightSubHeader}
         >
           {/* Add sub-heading text here if necessary */}
         </h2>
@@ -94,13 +136,13 @@ const FAQ: React.FC = () => {
             data-aos="fade-up"
             data-aos-delay={200 * (index + 1)}
           >
-            <h3 className="question" style={styles.faqQuestionStyle}>
+            <h3 className="question" style={theme === "dark" ? styles.faqDarkQuestionStyle : styles.faqLightQuestionStyle}>
               {faq.question}
             </h3>
             <p
               className="answer"
               data-testid="faq-answer"
-              style={styles.faqAnswerStyle}
+              style={theme === "dark" ? styles.faqDarkAnswerStyle: styles.faqLightAnswerStyle}
               dangerouslySetInnerHTML={{ __html: faq.answer }}
             ></p>
           </div>

@@ -17,6 +17,10 @@ const UpcomingEvents: React.FC = () => {
   );
 
   const styles: { [key: string]: React.CSSProperties } = {
+    eventStyle: {
+      backgroundColor: "#181A1B",
+      padding: "7rem",
+    },
 		eventsBodyStyle: {
 			fontSize: "1.1rem",
       fontWeight: "bold",
@@ -30,7 +34,7 @@ const UpcomingEvents: React.FC = () => {
 	};
 
   return (
-    <div style={{ backgroundColor: "#1E2022", padding: "7rem" }}>
+    <div style={styles.eventStyle}>
       <div className="container">
         <h1 style={styles.eventsTitleStyle} data-aos="fade-up">
           Upcoming Events
@@ -39,7 +43,8 @@ const UpcomingEvents: React.FC = () => {
         <br />
         <div
           data-tockify-component="mini"
-          data-tockify-calendar="tarun.eswar"
+          // need to replace the below calendar
+          //data-tockify-calendar="tarun.eswar"
           data-tockify-width="100%"
         ></div>
       </div>

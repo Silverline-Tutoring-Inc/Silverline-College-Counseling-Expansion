@@ -3,6 +3,10 @@ import CollapseBtn from "./CollapseBtn";
 
 const OurReach: React.FC = () => {
   const styles: { [key: string]: React.CSSProperties } = {
+    reachStyle: {
+			backgroundColor: "#181A1B",
+			padding: "7rem",
+		},
 		reachBodyStyle: {
 			fontSize: "1.1rem",
       fontWeight: "bold",
@@ -13,10 +17,24 @@ const OurReach: React.FC = () => {
       fontWeight: "bold",
       color: "#918CA1",
 		},
+    reachContainerStyle: {
+			display: "flex",
+      flexDirection: "column",
+      width: "50%",
+      justifyContent: "flexStart",
+      paddingRight: "0.75rem"
+		},
+    reachContainerStyle2: {
+			display: "flex",
+      flexDirection: "column",
+      width: "50%",
+      justifyContent: "flexStart",
+      paddingLeft: "0.75rem"
+		},
 	};
 
   return (
-    <div style={{ backgroundColor: "#181A1B", padding: "7rem" }}>
+    <div style={styles.reachStyle}>
       <div className="container">
         <h1 style={styles.reachTitleStyle} data-aos="fade-up">
           Our Reach
@@ -28,7 +46,7 @@ const OurReach: React.FC = () => {
         </p>
 
         <div className="container text-white" style={{ display: "flex" }} data-aos="fade-up" data-aos-delay="100">
-          <div style={{ display: "flex", flexDirection: "column", width: "50%", justifyContent: "flexStart", paddingRight: "0.75em" }}>
+          <div style={styles.reachContainerStyle}>
             <div>
               <CollapseBtn region={"North America"} countries={["Canada", "United States", "Mexico", "Puerto Rico"]} />
             </div>
@@ -65,7 +83,7 @@ const OurReach: React.FC = () => {
               <CollapseBtn region={"Australia"} countries={["Australia", "New Zealand", "Papua New Guinea"]} />
             </div>
           </div>
-          <div style={{ display: "flex", flexDirection: "column", width: "50%", justifyContent: "flexStart", paddingLeft: "0.75em" }}>
+          <div style={styles.reachContainerStyle2}>
             <div>
               <CollapseBtn region={"Central America"} countries={["Belize", "Costa Rica", "El Salvador", "Guatemala", "Honduras", "Nicaragua", "Panama"]} />
             </div>

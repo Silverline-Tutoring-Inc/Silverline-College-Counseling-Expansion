@@ -3,7 +3,7 @@ import React from "react";
 const QuickHelp: React.FC = () => {
   const styles: { [key: string]: React.CSSProperties } = {
 		quickhelpContainerStyle: {
-			backgroundColor: "#1E2022",
+			backgroundColor: "#181A1B",
       padding: "5rem",
       display: "flex",
       justifyContent: "center", // Center the content horizontally

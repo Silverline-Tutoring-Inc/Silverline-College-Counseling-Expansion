@@ -41,6 +41,32 @@ const StatItem: React.FC<StatItemProps> = ({ num, text }) => (
 );
 
 const Statistics: React.FC = () => {
+  const styles: { [key: string]: React.CSSProperties } = {
+    statisticsImageStyle: {
+      width: "100%",
+      background: `url(${img}) no-repeat scroll center/cover`,
+      padding: "150px 50px",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      gap: 50,
+    },
+    statisticsHeaderStyle: {
+      color: "white",
+      fontWeight: 800,
+      textAlign: "center",
+      fontFamily: "'Work Sans', sans-serif",
+    },
+    statisticsCircleStyle: {
+      display: "grid",
+      gridTemplateColumns: "auto auto auto auto",
+      width: "60%",
+      rowGap: 100,
+      columnGap: 50,
+    },
+  };
+
+
   const statsListConst: StatItemProps[] = [
     { num: 75, text: "Average Sessions Per Week" },
     { num: 78, text: "Average Tutoring Hours Per Week" },
@@ -86,37 +112,16 @@ const Statistics: React.FC = () => {
 
   return (
     <div
-      style={{
-        width: "100%",
-        background: `url(${img}) no-repeat scroll center/cover`,
-        padding: "150px 50px",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        gap: 50,
-      }}
-    >
+      style={styles.statisticsImageStyle}>
       <h1
-        style={{
-          color: "white",
-          fontWeight: 800,
-          textAlign: "center",
-          fontFamily: "'Work Sans', sans-serif",
-        }}
+        style={styles.statisticsHeaderStyle}
         data-aos="fade-up"
         data-aos-delay="1000"
-        data-aos-id="stats"
-      >
+        data-aos-id="stats">
         Silverline Statistics
       </h1>
       <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "auto auto auto auto",
-          width: "60%",
-          rowGap: 100,
-          columnGap: 50,
-        }}
+        style={styles.statisticsCircleStyle}
       >
         {statsList.map((s, index) => (
           <StatItem key={index} {...s} />
