@@ -10,56 +10,78 @@ const FAQ: React.FC = () => {
   const { theme, toggleTheme } = useTheme();
 
   const styles: { [key: string]: React.CSSProperties } = {
-    faqheaderDark: {
-      color: "white",
-      fontWeight: 600,
-    },
-    faqheaderLight: {
-      color: "black",
-      fontWeight: 600,
-    },
-    faqtextDark: {
-      color: "#d6d3cd",
-    },
-    faqtextLight: {
-      color: "#181a1b",
-    },
-    faqbgDark: {
-      backgroundColor: "#181a1b",
-    },
-    faqbgLight: {
-      backgroundColor: "#d6d3cd",
-    },
-    faqContainer: {
+    faqDarkContainer: {
       display: "flex",
       alignItems: "center",
       backgroundColor: "#181A1B",
     },
-    faqText: {
+    faqLightContainer: {
+      display: "flex",
+      alignItems: "center",
+      backgroundColor: "#D6D3CD",
+    },
+    faqDarkText: {
       flex: "1",
       padding: "40px",
       fontSize: "1.1rem",
       fontWeight: "200",
-      color: "#EAEAEA",
+      color: "#D6D3CD",
       marginRight: "50px",
     },
-    faqSubHeader: {
+    faqLightText: {
+      flex: "1",
+      padding: "40px",
+      fontSize: "1.1rem",
+      fontWeight: "200",
+      color: "#181A1B",
+      marginRight: "50px",
+    },
+    faqDarkSubHeader: {
       fontSize: "18px",
       textTransform: "uppercase",
-      color: "#918CA1",
+      color: "#D6D3CD",
       fontWeight: "700",
       marginBottom: "20px",
     },
-    faqHeader: {
+    faqLightSubHeader: {
+      fontSize: "18px",
+      textTransform: "uppercase",
+      color: "#181A1B",
+      fontWeight: "700",
+      marginBottom: "20px",
+    },
+    faqDarkHeader: {
       fontSize: "46px",
       fontWeight: "bold",
       color: "white",
       marginBottom: "30px",
     },
-    faqQuestionStyle: {
+    faqLightHeader: {
+      fontSize: "46px",
+      fontWeight: "bold",
+      color: "black",
+      marginBottom: "30px",
+    },
+    faqDarkBackground: {
+      backgroundColor: "#181a1b",
+    },
+    faqLightBackground: {
+      backgroundColor: "#d6d3cd",
+    },
+    faqDarkQuestionStyle: {
+      color: "#D6D3CD",
       marginBottom: "15px",
     },
-    faqAnswerStyle: {
+    faqLightQuestionStyle: {
+      color: "#181A1B",
+      marginBottom: "15px",
+    },
+    faqDarkAnswerStyle: {
+      color: "#D6D3CD",
+      marginBottom: "30px",
+    },
+    faqLightAnswerStyle: {
+      color: "#181A1B",
       marginBottom: "30px",
     },
   };
@@ -99,28 +121,28 @@ const FAQ: React.FC = () => {
 
   return (
     <div
-      style={styles.faqContainer}
+      style={theme === "#181A1B" ? styles.faqDarkContainer : styles.faqLightContainer}
       className={`section ${
-        theme === "#181A1B" ? styles.bgDark : styles.bgLight
+        theme === "#181A1B" ? styles.faqDarkBackground : styles.faqLightBackground
       }`}
     >
-      <div className="container" style={styles.faqText}>
+      <div className="container" style={theme === "#181A1B" ? styles.faqDarkText : styles.faqLightText}>
         <h1
           className={`title ${
-            theme === "#181A1B" ? styles.headerDark : styles.headerLight
+            theme === "#181A1B" ? styles.faqDarkHeader : styles.faqLightHeader
           }`}
           data-aos="fade-up"
-          style={styles.faqHeader}
+          style={theme === "#181A1B" ? styles.faqDarkHeader : styles.faqLightHeader}
         >
           Frequently Asked Questions
         </h1>
         <h2
           className={`sub-heading ${
-            theme === "#181A1B" ? styles.headerDark : styles.headerLight
+            theme === "#181A1B" ? styles.faqDarkHeader : styles.faqLightHeader
           }`}
           data-aos="fade-up"
           data-aos-delay="100"
-          style={styles.faqSubHeader}
+          style={theme === "#181A1B" ?  styles.faqDarkSubHeader : styles.faqLightSubHeader}
         >
           {/* Add sub-heading text here if necessary */}
         </h2>
@@ -132,18 +154,18 @@ const FAQ: React.FC = () => {
           >
             <h3
               className={`question ${
-                theme === "#181A1B" ? styles.headerDark : styles.headerLight
+                theme === "#181A1B" ? styles.faqDarkHeader : styles.faqLightHeader
               }`}
-              style={styles.faqQuestionStyle}
+              style={theme === "#181A1B" ? styles.faqDarkQuestionStyle: styles.faqLightQuestionStyle}
             >
               {faq.question}
             </h3>
             <p
               className={`answer ${
-                theme === "#181A1B" ? styles.headerDark : styles.headerLight
+                theme === "#181A1B" ? styles.faqDarkHeader : styles.faqLightHeader
               }`}
               data-testid="faq-answer"
-              style={styles.faqAnswerStyle}
+              style={theme === "#181A1B" ? styles.faqDarkAnswerStyle: styles.faqLightAnswerStyle}
               dangerouslySetInnerHTML={{ __html: faq.answer }}
             ></p>
           </div>
